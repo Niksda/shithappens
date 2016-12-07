@@ -1,0 +1,6 @@
+<svg width="700" height="100%">
+  <path class="cls-1" d="M478.68,152l-39.35-.5A114.63,114.63,0,0,1,325,37V0h50V37a64.57,64.57,0,0,0,64.5,64.5h.32l39.5.5Z" transform="translate(0)" fill="#8E1919"/>
+  <ellipse cx="100" cy="550" rx="200" ry="170" fill="#8E1919" transform="rotate(-50)"/> /* Magen */
+  <ellipse cx="200" cy="500" rx="250" ry="170" fill="#8E1919" transform="rotate(-20)"/> /* Magen */
+
+</svg>

@@ -1,0 +1,15 @@
+<svg width="700" height="100%">
+  <circle cx="350" cy="300" r="180" fill="#C92828"/>
+  <circle cx="350" cy="350" r="120" fill="#8E1919" />
+  <ellipse cx="250" cy="450" rx="120" ry="80" fill="#DD0000"/> /* Zunge */
+  <ellipse cx="450" cy="450" rx="120" ry="80" fill="#DD0000"/> /* Zunge */
+  <circle cx="350" cy="300" r="290" stroke="white" stroke-width="120" fill="none" /> /* weisse Kontur */
+  <rect x="325" y="500" width="50" height="100%" rx="0" ry="0" fill="#8E1919"/> /* Speiseröhre */
+  <ellipse cx="350" cy="250" rx="30" ry="50" fill="#C92828"/> /* Zipfel */
+  <circle cx="350" cy="300" r="200" stroke="tomato" stroke-width="60" fill="none" /> /* Kopf */
+  <ellipse cx="100" cy="300" rx="50" ry="90" fill="tomato"/> /* Ohr */
+  <ellipse cx="600" cy="300" rx="50" ry="90" fill="tomato"/> /* Ohr */
+  <ellipse cx="350" cy="70" rx="40" ry="50" fill="tomato"/> /* Nase */
+  <circle cx="335" cy="55" r="5" fill="#8E1919"  /> /* Nasenloch */
+  <circle cx="365" cy="55" r="5" fill="#8E1919"  /> /* Nasenloch */
+</svg>
