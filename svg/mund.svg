@@ -1,15 +1,26 @@
-<svg width="700" height="100%">
-  <circle cx="350" cy="300" r="180" fill="#C92828"/>
-  <circle cx="350" cy="350" r="120" fill="#8E1919" />
-  <ellipse cx="250" cy="450" rx="120" ry="80" fill="#DD0000"/> /* Zunge */
-  <ellipse cx="450" cy="450" rx="120" ry="80" fill="#DD0000"/> /* Zunge */
-  <circle cx="350" cy="300" r="290" stroke="white" stroke-width="120" fill="none" /> /* weisse Kontur */
-  <rect x="325" y="500" width="50" height="100%" rx="0" ry="0" fill="#8E1919"/> /* Speiseröhre */
-  <ellipse cx="350" cy="250" rx="30" ry="50" fill="#C92828"/> /* Zipfel */
-  <circle cx="350" cy="300" r="200" stroke="tomato" stroke-width="60" fill="none" /> /* Kopf */
-  <ellipse cx="100" cy="300" rx="50" ry="90" fill="tomato"/> /* Ohr */
-  <ellipse cx="600" cy="300" rx="50" ry="90" fill="tomato"/> /* Ohr */
-  <ellipse cx="350" cy="70" rx="40" ry="50" fill="tomato"/> /* Nase */
-  <circle cx="335" cy="55" r="5" fill="#8E1919"  /> /* Nasenloch */
-  <circle cx="365" cy="55" r="5" fill="#8E1919"  /> /* Nasenloch */
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 700 1080" style="enable-background:new 0 0 700 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#C92828;}
+	.st1{fill:#8E1919;}
+	.st2{fill:#DD0000;}
+	.st3{fill:none;stroke:#FFFFFF;stroke-width:120;}
+	.st4{fill:none;stroke:#FF6347;stroke-width:60;}
+	.st5{fill:#FF6347;}
+</style>
+<circle class="st0" cx="350" cy="300" r="180"/>
+<circle class="st1" cx="350" cy="350" r="120"/>
+<ellipse class="st2" cx="250" cy="450" rx="120" ry="80"/>
+<ellipse class="st2" cx="450" cy="450" rx="120" ry="80"/>
+<circle class="st3" cx="350" cy="300" r="290"/>
+<rect x="325" y="500" class="st1" width="50" height="1080"/>
+<ellipse class="st0" cx="350" cy="250" rx="30" ry="50"/>
+<circle class="st4" cx="350" cy="300" r="200"/>
+<ellipse class="st5" cx="100" cy="300" rx="50" ry="90"/>
+<ellipse class="st5" cx="600" cy="300" rx="50" ry="90"/>
+<ellipse class="st5" cx="350" cy="70" rx="40" ry="50"/>
+<circle class="st1" cx="335" cy="55" r="5"/>
+<circle class="st1" cx="365" cy="55" r="5"/>
 </svg>
