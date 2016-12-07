@@ -5,9 +5,12 @@
 }
 
 body{
+  position: relative;
+  max-height: 100%;
+  width: 100%;
   font-family: 'Lato', sans-serif;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 1rem;
   margin: 0;
 }
 
@@ -24,68 +27,42 @@ ul {
   list-style: none;
 }
 
-#mund{
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .svg{
   height: 100vh;
 }
 
-
-#speiseroehre{
+.section{
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+#mund{
+
+}
+
+#speiseroehre{
   background: tomato;
 }
 
 #magen{
-  height: 100vh;
   background: #C92828;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.cls-1{
-  padding: 100px;
-  background: blue;
-}
-
-
-#12darm{
-  height: 100vh;
+#zwoelfdarm{
   background: #C92828;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #duenndarm{
-  height: 100vh;
   background: #C92828;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #dickdarm{
-  height: 100vh;
   background: #C92828;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 #mastdarm{
-  height: 100vh;
   background: #C92828;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
