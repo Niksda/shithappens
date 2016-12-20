@@ -1,76 +1,92 @@
 * {
-  box-sizing: border-box;
-  margin:0;
-  padding:0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    cursor: url(../img/erdbeere.cur), default;
 }
 
-body{
-  position: relative;
-  max-height: 100%;
-  width: 100%;
-  font-family: 'Lato', sans-serif;
-  line-height: 1.5;
-  font-size: 1rem;
-  margin: 0;
+body {
+    position: relative;
+    max-height: 100%;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+    line-height: 1.5;
+    font-size: 1rem;
+    margin: 0;
 }
 
-img{
-  width: 100%;
-  height: auto;
-  padding:0;
-  border:none;
+img {
+    width: 51vw;
+    height: auto;
+    padding: 0;
+    border: none;
 }
 
-nav{
-  position: fixed;
+.main__header {
+    position: relative;
 }
 
-a{
-  text-decoration: none;
-  color: black;
+.main__nav {
+    position: fixed;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
 }
 
-ul {
-  list-style: none;
+.main__nav__item {
+    list-style-type: none;
 }
 
-
-.svg{
-  height: 100vh;
+.main__nav__link {
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    padding: 1rem;
+    transition: all 0.125s ease-in-out;
+    border-radius: 1rem;
 }
 
-.section{
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.main__nav__link:hover {
+    background: rgb(95, 89, 81);
+    color: white;
 }
 
-#mund{
-
+.svg {
+    height: 100vh;
 }
 
-#speiseroehre{
-  background: tomato;
+.section {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#magen{
-  background: #C92828;
+#mund {
+    background: antiquewhite;
 }
 
-#zwoelfdarm{
-  background: #C92828;
+#speiseroehre {
+    background: tomato;
 }
 
-#duenndarm{
-  background: #C92828;
+#magen {
+    background: #C92828;
 }
 
-#dickdarm{
-  background: #C92828;
+#zwoelfdarm {
+    background: #C92828;
 }
 
-#mastdarm{
-  background: #C92828;
+#duenndarm {
+    background: #C92828;
+}
+
+#dickdarm {
+    background: #C92828;
+}
+
+#mastdarm {
+    background: #C92828;
 }
