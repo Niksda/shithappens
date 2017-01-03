@@ -1,0 +1,12 @@
+Adobe After Effects v14.0.1 Windows 64 Renderprotokoll für Projekt 'shithappens_sophie.aep'
+
+Rendervorgang gestartet am 03.01.2017 um 01:24:57
+
+  03.01.2017 01:24:57: Komposition '01_Mund' gestartet.
+
+  Speichern unter: C:\Users\Niksda\Desktop\01_Mund_1.avi    03.01.2017 01:25:22: Komposition '01_Mund' beendet.
+
+
+  Bish. Renderz.: 25 Sekunden
+Das Protokoll wurde am 03.01.2017 um 01:25:22 geschlossen.
+
