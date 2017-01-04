@@ -1,0 +1,12 @@
+Adobe After Effects v14.0.1 Windows 64 Renderprotokoll für Projekt 'shithappens_final.aep'
+
+Rendervorgang gestartet am 04.01.2017 um 13:01:36
+
+  04.01.2017 13:01:36: Komposition 'Instagram' gestartet.
+
+  Speichern unter: C:\Users\Niksda\Desktop\Instagram.avi    04.01.2017 13:05:27: Komposition 'Instagram' beendet.
+
+
+  Bish. Renderz.: 3 Min., 51 Sek.
+Das Protokoll wurde am 04.01.2017 um 13:05:27 geschlossen.
+
