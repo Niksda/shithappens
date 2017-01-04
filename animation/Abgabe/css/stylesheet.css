@@ -20,12 +20,13 @@ body {
 
 .main__header {
     position: relative;
+    z-index: 50;
 }
 
 .main__nav {
     position: fixed;
-    top: 50%;
-    left: 30vmin;
+    top: 0%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
 
@@ -47,28 +48,83 @@ body {
     color: white;
 }
 
+.main__header .submenu {
+    display: none
+}
+
 .doc {
     width: 100vmin;
     position: fixed;
     top: 75vmin;
     z-index: 5;
-    right: -3vmin;
+    right: -2%;
+}
+
+.main__header .menu {
+    display: none;
+    transition: all 0.5s cubic;
+}
+
+.main__header .submenu {
+    display: inline-block;
+    position: relative;
+    top: 10vmin;
+}
+
+.main__header .hamburger:hover~.main__header .menu {
+    display: block;
 }
 
 @media screen and (min-width: 34em) {
+    .main__header .menu {
+        display: none;
+        transition: all 0.5s cubic;
+    }
+    .main__header .submenu {
+        display: inline-block;
+        position: relative;
+        top: 10vmin;
+    }
+    .main__header .hamburger:hover~.main__header .menu {
+        display: block;
+    }
+    .main__nav {
+        left: 50%;
+    }
     .doc {
-        top: 62vmin;
+        top: 50vmin;
+        transform: scale(0.5);
     }
 }
 
 @media screen and (min-width: 48em) {
+    .main__header .menu {
+        display: none;
+        transition: all 0.5s cubic;
+    }
+    .main__header .submenu {
+        display: inline-block;
+        position: relative;
+        top: 10vmin;
+    }
+    .main__header .hamburger:hover~.main__header .menu {
+        display: block;
+    }
+    .main__nav {
+        left: 50%;
+        top: 0;
+    }
     .doc {
-        top: 38vmin;
+        top: 25vmin;
+        left: 15%;
         transform: scale(0.52);
     }
 }
 
 @media screen and (min-width: 62em) {
+    .main__nav {
+        left: 13.5%;
+    }
     .doc {
         top: 25vmin;
         transform: scale(0.28);
@@ -76,9 +132,13 @@ body {
 }
 
 @media screen and (min-width: 76em) {
+    .main__nav {
+        left: 15%;
+    }
     .doc {
-        top: 5vmin;
+        top: 25vmin;
         transform: scale(0.35);
+        left: 50%;
     }
 }
 
@@ -87,6 +147,8 @@ body {
     height: 100%;
     display: flex;
     justify-content: center;
+    position: relative;
+    top: 5vmin;
 }
 
 .container {
@@ -102,7 +164,7 @@ body {
 }
 
 #bodymovin {
-  background: white;
+    background: white;
     width: 83vmin;
     height: 83vmin;
     display: block;
