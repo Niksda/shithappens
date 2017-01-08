@@ -37,6 +37,15 @@ svg {
   transform: rotate(0deg);
 }
 
+.fish {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  z-index: 100;
+}
+
 .scroll{
   font-size: 15px;
   font-weight: 400;
@@ -90,6 +99,57 @@ svg {
 
 .content-sunlight-background{
   margin: 2040px 0px 0px 0px;
+  padding: 0px 0px 0px 200px;
+  position: absolute;
+  background: blue;
+  opacity: 0.2;
+  width: 100%;
+  height: 50px;
+}
+
+.content-canyon{
+  margin: 3545px 0px 0px 0px;
+  padding: 0px 0px 0px 250px;
+  position: absolute;
+  width: 100%
+}
+
+.content-canyon-background{
+  margin: 3670px 0px 0px 0px;
+  padding: 0px 0px 0px 200px;
+  position: absolute;
+  background: blue;
+  opacity: 0.2;
+  width: 100%;
+  height: 50px;
+}
+
+.content-titanic{
+  margin: 7410px 0px 0px 0px;
+  padding: 0px 0px 0px 250px;
+  position: absolute;
+  width: 100%
+}
+
+.content-titanic-background{
+  margin: 7547px 0px 0px 0px;
+  padding: 0px 0px 0px 200px;
+  position: absolute;
+  background: blue;
+  opacity: 0.2;
+  width: 100%;
+  height: 50px;
+}
+
+.content-everest{
+  margin: 17820px 0px 0px 0px;
+  padding: 0px 0px 0px 250px;
+  position: absolute;
+  width: 100%
+}
+
+.content-everest-background{
+  margin: 17950px 0px 0px 0px;
   padding: 0px 0px 0px 200px;
   position: absolute;
   background: blue;

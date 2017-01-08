@@ -21,7 +21,7 @@
     </header>
 
     <div class="submarine" data-start="transform: translateY(20vh)" data-end="transform: translateY(50vh)"  >
-      <svg width="250" height="150">
+      <svg width="200" height="150" style="margin-left: 50px">
         <path d="M 100 120 l 20 -5 v 10 l -20 -5 l -20 -5 v 10" stroke="#B5B5B5" fill="#B5B5B5" data-start="transform: rotateY(0deg)" data-end="transform: rotateY(1800deg)" transform-origin="center" />
         <path d="M100 40 L140 0 L60 0" fill="url(#lr)" /> <!-- Licht -->
         <circle cx="100" cy="120" r="3" fill="#B5B5B5"/>
@@ -44,6 +44,15 @@
       </svg>
     </div>
 
+    <div class="fish">
+      <svg width="500" height="100" style="margin: 300px 0px 0px 500px">
+        <ellipse cx="100" cy="75" rx="20" ry="15" fill="#7bd676"> <animateMotion dur="10s" values="0,0; 300,0; 0,0" repeatCount="indefinite" />
+        <ellipse/>
+        <circle cx="250" cy="50" r="8" fill="white"/>
+      </svg>
+    </div>
+
+
     <div class="verlauf">
 
       <div class="content">
@@ -57,6 +66,24 @@
         </div>
         <div class="content-sunlight">
           <p class="content-text">End of <br>sunlight</p>
+        </div>
+
+        <div class="content-canyon-background">
+        </div>
+        <div class="content-canyon">
+          <p class="content-text">Deepest Point of <br>Grand Canyon</p>
+        </div>
+
+        <div class="content-titanic-background">
+        </div>
+        <div class="content-titanic">
+          <p class="content-text">The Titanic on <br>the bottom</p>
+        </div>
+
+        <div class="content-everest-background">
+        </div>
+        <div class="content-everest">
+          <p class="content-text">Height of <br>Mount Everest</p>
         </div>
 
         <div class="content-mariana-background">
@@ -105,7 +132,7 @@
       <hr>
       <hr id="meter_100">
       <hr>
-      <hr id="meter_100">
+      <hr id="meter_100"><p>1800</p>
       <hr>
       <hr id="meter_100">
       <hr>
@@ -143,7 +170,7 @@
       <hr>
       <hr id="meter_100">
       <hr>
-      <hr id="meter_100">
+      <hr id="meter_100"><p>3700</p>
       <hr>
       <hr id="meter_100">
       <hr>
@@ -245,7 +272,7 @@
       <hr>
       <hr id="meter_100">
       <hr>
-      <hr id="meter_100">
+      <hr id="meter_100"><p>8800</p>
       <hr>
       <hr id="meter_100">
       <hr>
