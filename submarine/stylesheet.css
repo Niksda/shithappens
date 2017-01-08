@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+  background: black;
+}
+
+.verlauf{
+  width: 100%;
+  height: 2000px;
+  margin-top: -50px;
+  background: linear-gradient(to bottom, #47afba, black);
+  position: absolute;
+  z-index: -100;
+}
+
+.submarine {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 200px;
+  z-index: 100;
+}
+
+svg {
+  transform: rotate(180deg);
+  transition: all 0.4s ease-in-out;
+}
+
+.up {
+  transform: rotate(0deg);
+}
+
+.scroll{
+  font-size: 15px;
+  font-weight: 400;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  margin: 20px 0px 0px 0px;
+}
+
+.wellen{
+  width: 100%;
+}
+
+.content {
+  max-width: 100%;
+  margin: 0 auto;
+  float: left;
+}
+
+.content-text{
+  font-size: 30px;
+  font-weight: 400;
+  color: white;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.content-wale{
+  margin: 840px 0px 0px 0px;
+  padding: 0px 0px 0px 250px;
+  position: absolute;
+  width: 100%
+}
+
+.content-wale-background{
+  margin: 1018px 0px 0px 0px;
+  padding: 0px 0px 0px 200px;
+  position: absolute;
+  background: #1630c4;
+  opacity: 0.3;
+  width: 100%;
+  height: 50px;
+}
+
+.content-sunlight{
+  margin: 1910px 0px 0px 0px;
+  padding: 0px 0px 0px 250px;
+  position: absolute;
+  width: 100%
+}
+
+.content-sunlight-background{
+  margin: 2040px 0px 0px 0px;
+  padding: 0px 0px 0px 200px;
+  position: absolute;
+  background: blue;
+  opacity: 0.2;
+  width: 100%;
+  height: 50px;
+}
+
+.content-mariana{
+  margin: 22300px 0px 0px 0px;
+  padding: 0px 0px 0px 250px;
+  position: absolute;
+  width: 100%
+}
+
+.content-mariana-background{
+  margin: 22440px 0px 0px 0px;
+  padding: 0px 0px 0px 200px;
+  position: absolute;
+  background: blue;
+  opacity: 0.2;
+  width: 100%;
+  height: 50px;
+}
+
+.meter{
+  width: 20px;
+  color: white;
+  padding-top: 75px;
+  z-index: 100;
+}
+
+.meter p{
+  margin-top: -115px;
+  padding: 0 0 0 20px;
+  position: absolute;
+  font-weight: 700;
+}
+
+.meter hr{
+  margin: 0px 0px 100px 0px;
+  border:solid white 1px;
+  width: 7px;
+}
+
+#meter_100{
+  margin: 0px 0px 100px 0px;
+  border:solid white 1px;
+  width: 14px;
+}

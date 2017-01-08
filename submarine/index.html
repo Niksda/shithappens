@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>submarine</title>
+    <link href="stylesheet.css" rel="stylesheet">
+    <script src="skrollr.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <header>
+      <div class="scroll">
+        <p>SCROLL</p>
+        <img src="img/pfeil.svg" alt="pfeil" style="width: 20px;">
+      </div>
+      <div class="wellen">
+        <img src="img/wellen.svg" alt="wellen">
+      </div>
+    </header>
+
+    <div class="submarine" data-start="transform: translateY(20vh)" data-end="transform: translateY(50vh)"  >
+      <svg width="250" height="150">
+        <path d="M 100 120 l 20 -5 v 10 l -20 -5 l -20 -5 v 10" stroke="#B5B5B5" fill="#B5B5B5" data-start="transform: rotateY(0deg)" data-end="transform: rotateY(1800deg)" transform-origin="center" />
+        <path d="M100 40 L140 0 L60 0" fill="url(#lr)" /> <!-- Licht -->
+        <circle cx="100" cy="120" r="3" fill="#B5B5B5"/>
+        <rect x=110 y=70 width="42" height="15" fill="#B5B5B5"/> <!-- Rohr unten -->
+        <rect x=125 y=67 width="10" height="21" rx="3" ry="3" fill="#FCD700"/>
+        <rect x=145 y=65 width="15" height="12" fill="#B5B5B5"/> <!-- Rohr oben -->
+        <rect x=142 y=60 width="21" height="7" rx="3" ry="3" fill="#FCD700"/>
+        <rect x=145 y=70 width="15" height="15" rx="10" ry="10" fill="#B5B5B5"/> <!-- Verbindung Rohr -->
+        <ellipse cx="100" cy="75" rx="30" ry="40" fill="#FCD700"/>
+        <circle cx="100" cy="90" r="11" fill="#B5B5B5"/>
+        <circle cx="100" cy="90" r="8" fill="white"/>
+        <circle cx="100" cy="63" r="11" fill="#B5B5B5"/>
+        <circle cx="100" cy="63" r="8" fill="white"/>
+
+        <defs>
+          <linearGradient id="lr" x1="0%" x2="0%" y1="0%" y2="100%">
+            <stop offset="0%" stop-color="white" stop-opacity="0%" />
+            <stop offset="100%" stop-color="white" stop-opacity="30%"/>
+          </linearGradient>
+      </svg>
+    </div>
+
+    <div class="verlauf">
+
+      <div class="content">
+        <div class="content-wale-background">
+        </div>
+        <div class="content-wale">
+          <p class="content-text">Depth that <br>blue wales <br>can dive</p>
+        </div>
+
+        <div class="content-sunlight-background">
+        </div>
+        <div class="content-sunlight">
+          <p class="content-text">End of <br>sunlight</p>
+        </div>
+
+        <div class="content-mariana-background">
+        </div>
+        <div class="content-mariana">
+          <p class="content-text">Bottom of the <br>Mariana Trench</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <div class="meter">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100"><p>500</p>
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100"><p>1000</p>
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100"><p>1500</p>
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100"><p>2000</p>
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100"><p>2500</p>
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100"><p>3000</p>
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100"><p>3500</p>
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100"><p>4000</p>
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100"><p>4500</p>
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100"><p>5000</p>
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100"><p>5500</p>
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100"><p>6000</p>
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100"><p>6500</p>
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100"><p>7000</p>
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100"><p>7500</p>
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100"><p>8000</p>
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100"><p>8500</p>
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100"><p>9000</p>
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100"><p>9500</p>
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100"><p>10000</p>
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100"><p>10500</p>
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100">
+      <hr>
+      <hr id="meter_100"><p>11000</p>
+    </div>
+
+    <div class="boden">
+      <img src="img/boden.svg" alt="boden">
+    </div>
+
+
+    <script>
+      var s = skrollr.init({
+        render: function(data) {
+          //Log the current scroll position.
+          if (data.direction === 'up') {
+            document.querySelector('svg').classList.add('up')
+          } else {
+            document.querySelector('svg').classList.remove('up')
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
