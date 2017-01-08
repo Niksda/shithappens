@@ -21,34 +21,38 @@
     </header>
 
     <div class="submarine" data-start="transform: translateY(20vh)" data-end="transform: translateY(50vh)"  >
-      <svg width="200" height="150" style="margin-left: 50px">
-        <path d="M 100 120 l 20 -5 v 10 l -20 -5 l -20 -5 v 10" stroke="#B5B5B5" fill="#B5B5B5" data-start="transform: rotateY(0deg)" data-end="transform: rotateY(1800deg)" transform-origin="center" />
-        <path d="M100 40 L140 0 L60 0" fill="url(#lr)" /> <!-- Licht -->
-        <circle cx="100" cy="120" r="3" fill="#B5B5B5"/>
-        <rect x=110 y=70 width="42" height="15" fill="#B5B5B5"/> <!-- Rohr unten -->
-        <rect x=125 y=67 width="10" height="21" rx="3" ry="3" fill="#FCD700"/>
-        <rect x=145 y=65 width="15" height="12" fill="#B5B5B5"/> <!-- Rohr oben -->
-        <rect x=142 y=60 width="21" height="7" rx="3" ry="3" fill="#FCD700"/>
-        <rect x=145 y=70 width="15" height="15" rx="10" ry="10" fill="#B5B5B5"/> <!-- Verbindung Rohr -->
-        <ellipse cx="100" cy="75" rx="30" ry="40" fill="#FCD700"/>
-        <circle cx="100" cy="90" r="11" fill="#B5B5B5"/>
-        <circle cx="100" cy="90" r="8" fill="white"/>
-        <circle cx="100" cy="63" r="11" fill="#B5B5B5"/>
-        <circle cx="100" cy="63" r="8" fill="white"/>
+      <svg width="200" height="150" style="margin-left: 40px">
+        <path d="M 45 60 h 10 l -10 30 h 10" stroke="#B5B5B5" fill="#B5B5B5" data-start="transform: rotateX(0deg)" data-end="transform: rotateX(3600deg)" transform-origin="center" />
+        <path d="M120 75 L200 100 L200 50 " fill="url(#lr)" /> <!-- Licht -->
+        <circle cx="50" cy="75" r="4" fill="#B5B5B5"/> <!-- Propeller -->
+        <rect x=50 y=74 width="10" height="2" fill="#B5B5B5"/> <!-- Propeller -->
+        <rect x=92 y=20 width="14" height="42" fill="#B5B5B5"/> <!-- Rohr unten -->
+        <rect x=89 y=40 width="21" height="10" rx="3" ry="3" fill="#FCD700"/>
+        <rect x=100 y=15 width="12" height="14" fill="#B5B5B5"/> <!-- Rohr oben -->
+        <rect x=110 y=12 width="7" height="21" rx="3" ry="3" fill="#FCD700"/>
+        <rect x=92 y=15 width="14" height="14" rx="10" ry="10" fill="#B5B5B5"/> <!-- Verbindung Rohr -->
+        <ellipse cx="100" cy="75" rx="40" ry="30" fill="#FCD700"/>
+        <circle cx="115" cy="75" r="11" fill="#B5B5B5"/> <!-- Fenster -->
+        <circle cx="115" cy="75" r="8" fill="white"/>
+        <circle cx="85" cy="75" r="11" fill="#B5B5B5"/> <!-- Fenster -->
+        <circle cx="85" cy="75" r="8" fill="white"/>
 
         <defs>
-          <linearGradient id="lr" x1="0%" x2="0%" y1="0%" y2="100%">
+          <linearGradient id="lr" x1="100%" x2="0%" y1="0%" y2="0%">
             <stop offset="0%" stop-color="white" stop-opacity="0%" />
             <stop offset="100%" stop-color="white" stop-opacity="30%"/>
           </linearGradient>
+        </defs>
       </svg>
     </div>
 
     <div class="fish">
-      <svg width="500" height="100" style="margin: 300px 0px 0px 500px">
-        <ellipse cx="100" cy="75" rx="20" ry="15" fill="#7bd676"> <animateMotion dur="10s" values="0,0; 300,0; 0,0" repeatCount="indefinite" />
-        <ellipse/>
-        <circle cx="250" cy="50" r="8" fill="white"/>
+      <svg width="700" height="200" style="margin: 200px 0px 0px 500px">
+        <ellipse class="fish_animation" cx="100" cy="75" rx="20" ry="15" fill="#7bd676"/>
+        <circle class="fish_animation" cx="110" cy="72" r="4" fill="white"/>
+        <circle class="fish_animation" cx="110" cy="72" r="2" fill="black"/>
+        <ellipse class="fish_animation" cx="75" cy=70 rx="8" ry="6" fill="#7bd676" />
+        <ellipse class="fish_animation" cx="75" cy=80 rx="8" ry="6" fill="#7bd676" />
       </svg>
     </div>
 
