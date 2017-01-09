@@ -28,22 +28,26 @@ body {
   z-index: 100;
 }
 
-svg {
-  transform: rotate(180deg);
-  transition: all 0.4s ease-in-out;
-}
-
-.up {
-  transform: rotate(0deg);
-}
-
 .fish {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
   z-index: 100;
+  animation: fish 7s infinite alternate;
+}
+
+@keyframes fish {
+  0% {
+    top: 0px; left: 0px;
+  }
+
+  50% {
+    top: 200px; left: 200px;
+  }
+
+  100% {
+    top: 200px; left: 400px;
+  }
 }
 
 .scroll{
