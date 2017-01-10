@@ -36,6 +36,11 @@ body {
     animation: fish 7s infinite alternate;
 }
 
+.wenden {
+  transform: scaleX(-1);
+}
+
+
 @keyframes fish {
     0% {
         top: 0px;
@@ -132,6 +137,20 @@ body {
     width: 100%;
     text-align: center;
     margin: 20px 0px 0px 0px;
+}
+
+.pfeil {
+  margin: 0 auto;
+  animation: pfeilbouncing 0.5s ease-in infinite alternate;
+}
+
+@keyframes pfeilbouncing {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(0px);
+  }
 }
 
 .wellen {

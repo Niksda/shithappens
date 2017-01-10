@@ -15,7 +15,7 @@
     <header>
         <div class="scroll">
             <p>SCROLL</p>
-            <img src="img/pfeil.svg" alt="pfeil" style="width: 20px;">
+            <img class="pfeil" src="img/pfeil.svg" alt="pfeil" style="width: 20px;">
         </div>
         <div class="wellen">
             <img src="img/wellen.svg" alt="wellen">
@@ -48,7 +48,7 @@
       </svg>
     </div>
 
-    <div class="fish">
+    <div class="fish" data-start="left: 0%;" data-end="left: 110%;">
         <svg width="700" height="200" style="margin: 200px 0px 0px 500px">
         <ellipse class="fish_animation" cx="100" cy="75" rx="20" ry="15" fill="#7bd676"/>
         <circle class="fish_animation" cx="110" cy="72" r="4" fill="white"/>
@@ -557,6 +557,26 @@
                 }
             }
         });
+    </script>
+    <script type="text/javascript">
+    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && $(window).width() > 400) {
+
+       skrollr.init({
+         forceHeight: false,
+         smoothScrolling: true,
+         render: function(data) {
+           if (data.direction == 'up') {
+
+             document.querySelector('.fish').classList.add('wenden')
+
+           } else {
+             document.querySelector('.fish').classList.remove('wenden')
+           }
+         }
+       });
+
+     }
+
     </script>
 </body>
 
