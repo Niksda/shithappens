@@ -22,9 +22,10 @@
         </div>
     </header>
 
+
     <div class="submarine" data-start="transform: translateY(20vh)" data-end="transform: translateY(50vh)">
-        <svg width="200" height="150" style="margin-left: 40px">
-        <path d="M 45 60 h 10 l -10 30 h 10" stroke="#B5B5B5" fill="#B5B5B5" data-start="transform: rotateX(0deg)" data-end="transform: rotateX(3600deg)" transform-origin="center" />
+      <svg width="200" height="150" style="margin-left: 40px">
+        <path d="M 45 60 h 10 l -10 30 h 10" stroke="#B5B5B5" fill="#B5B5B5" data-start="transform: rotateX(0deg)" data-end="transform: rotateX(1800deg)" transform-origin="center" />
         <path d="M120 75 L200 100 L200 50 " fill="url(#lr)" /> <!-- Licht -->
         <circle cx="50" cy="75" r="4" fill="#B5B5B5"/> <!-- Propeller -->
         <rect x=50 y=74 width="10" height="2" fill="#B5B5B5"/> <!-- Propeller -->
@@ -39,192 +40,192 @@
         <circle cx="85" cy="75" r="11" fill="#B5B5B5"/> <!-- Fenster -->
         <circle cx="85" cy="75" r="8" fill="white"/>
 
-        <defs>
-          <linearGradient id="lr" x1="100%" x2="0%" y1="0%" y2="0%">
-            <stop offset="0%" stop-color="white" stop-opacity="0%" />
-            <stop offset="100%" stop-color="white" stop-opacity="30%"/>
-          </linearGradient>
-        </defs>
+        <linearGradient id="lr" x1="100%" x2="0%" y1="0%" y2="0%">
+          <stop offset="0%" stop-color="white" stop-opacity="0%" />
+          <stop offset="100%" stop-color="white" stop-opacity="30%"/>
+        </linearGradient>
       </svg>
     </div>
 
-    <div class="fish" data-start="left: 0%;" data-end="left: 110%;">
-        <svg width="700" height="200" style="margin: 200px 0px 0px 500px">
-        <ellipse class="fish_animation" cx="100" cy="75" rx="20" ry="15" fill="#7bd676"/>
-        <circle class="fish_animation" cx="110" cy="72" r="4" fill="white"/>
-        <circle class="fish_animation" cx="110" cy="72" r="2" fill="black"/>
-        <ellipse class="fish_animation" cx="75" cy=70 rx="8" ry="6" fill="#7bd676" />
-        <ellipse class="fish_animation" cx="75" cy=80 rx="8" ry="6" fill="#7bd676" />
+
+    <div class="fish1">
+      <svg viewBox="0 0 1500 1500">
+          <ellipse class="fish_koerper1" cx="487.6" cy="339.7" rx="257.3" ry="152.2"/>
+          <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -150.0657 195.4017)" class="fish_koerper1" cx="160.8" cy="278.8" rx="76.1" ry="128.7"/>
+          <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -252.8446 237.9742)" class="fish_koerper1" cx="160.8" cy="424.2" rx="128.7" ry="76.1"/>
+          <circle class="fish_auge" cx="624.2" cy="314.4" r="35.6"/>
+          <circle cx="635.6" cy="318.5" r="23.5"/>
       </svg>
     </div>
+
+    <div class="fish2">
+      <svg viewBox="0 0 1500 1500">
+          <ellipse class="fish_koerper2" cx="487.6" cy="339.7" rx="257.3" ry="152.2"/>
+          <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -150.0657 195.4017)" class="fish_koerper2" cx="160.8" cy="278.8" rx="76.1" ry="128.7"/>
+          <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -252.8446 237.9742)" class="fish_koerper2" cx="160.8" cy="424.2" rx="128.7" ry="76.1"/>
+          <circle class="fish_auge" cx="624.2" cy="314.4" r="35.6"/>
+          <circle cx="635.6" cy="318.5" r="23.5"/>
+      </svg>
+    </div>
+
+    <div class="fish3">
+      <svg viewBox="0 0 1500 1500">
+          <ellipse class="fish_koerper3" cx="487.6" cy="339.7" rx="257.3" ry="152.2"/>
+          <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -150.0657 195.4017)" class="fish_koerper3" cx="160.8" cy="278.8" rx="76.1" ry="128.7"/>
+          <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -252.8446 237.9742)" class="fish_koerper3" cx="160.8" cy="424.2" rx="128.7" ry="76.1"/>
+          <circle class="fish_auge" cx="624.2" cy="314.4" r="35.6"/>
+          <circle cx="635.6" cy="318.5" r="23.5"/>
+      </svg>
+    </div>
+
 
     <div class="octopus">
-
-        <svg viewBox="0 0 1500 1500">
+      <svg viewBox="0 0 1500 1500">
         <path id="tentakel1" class="tentakel1">
-
-            <animate
-                     attributeName="d"
-                     dur="3000ms"
-                     repeatCount="indefinite"
-                     values="
+            <animate  attributeName="d"
+                      dur="3000ms"
+                      repeatCount="indefinite"
+                      values="
                       M50.2,671.5c0,0,51-30.5,73.6-9s19.4,53.5-22.1,93s-68.8,75.5-44.1,99s136.6-10,185-56
                      	s71.5-114,115.6-114S429.1,699,467,735s106.7,18.5,106.7,18.5;
 
                       M67.3,712.5c0,0,86.7-8.1,150.7-8.1s170.1,17.8,190,37.7s119.6,28.4,119.6,28.4s110,9,154.2,9
-                      	s133.7-42.9,154.8-64S964.1,726,991.4,726s156.6,18.5,156.6,18.5;
+                      s133.7-42.9,154.8-64S964.1,726,991.4,726s156.6,18.5,156.6,18.5;
 
                       M50.2,671.5c0,0,51-30.5,73.6-9s19.4,53.5-22.1,93s-68.8,75.5-44.1,99s136.6-10,185-56
-                        	s71.5-114,115.6-114S429.1,699,467,735s106.7,18.5,106.7,18.5;"/>
+                      s71.5-114,115.6-114S429.1,699,467,735s106.7,18.5,106.7,18.5;"/>
         </path>
 
         <path id="tentakel2" class="tentakel2">
+            <animate  attributeName="d"
+                      dur="3000ms"
+                      repeatCount="indefinite"
+                      values="
+                      M50.2,671.5c0,0,51-30.5,73.6-9s19.4,53.5-22.1,93s-68.8,75.5-44.1,99s136.6-10,185-56
+                      s71.5-114,115.6-114S429.1,699,467,735s106.7,18.5,106.7,18.5;
 
-            <animate
-              attributeName="d"
-              dur="3000ms"
-              repeatCount="indefinite"
-              values="
-             M50.2,671.5c0,0,51-30.5,73.6-9s19.4,53.5-22.1,93s-68.8,75.5-44.1,99s136.6-10,185-56
-             s71.5-114,115.6-114S429.1,699,467,735s106.7,18.5,106.7,18.5;
+                      M67.3,712.5c0,0,86.7-8.1,150.7-8.1s170.1,17.8,190,37.7s119.6,28.4,119.6,28.4s110,9,154.2,9
+                      s133.7-42.9,154.8-64S964.1,726,991.4,726s156.6,18.5,156.6,18.5;
 
-             M67.3,712.5c0,0,86.7-8.1,150.7-8.1s170.1,17.8,190,37.7s119.6,28.4,119.6,28.4s110,9,154.2,9
-               s133.7-42.9,154.8-64S964.1,726,991.4,726s156.6,18.5,156.6,18.5;
-
-             M50.2,671.5c0,0,51-30.5,73.6-9s19.4,53.5-22.1,93s-68.8,75.5-44.1,99s136.6-10,185-56
-                 s71.5-114,115.6-114S429.1,699,467,735s106.7,18.5,106.7,18.5;"/>
-        </path>
-<g class="flossen">
-      	<path id="flosse1" class="flosse1" d="M82.6,671.1c-4.8,3.1-13.2,7.3-23.9,5.9c-10.7-1.4-36.7,3.3-31.9,1.7s24-14.6,29.1-18.9
-        	s12.9-9.7,22.1-11.7s24.1,5.3,24.1,5.3S87.5,668,82.6,671.1z">
-          <animateMotion dur="3s"
-          values="0,0; 0,50; 0,0"
-          repeatCount="indefinite" />
+                      M50.2,671.5c0,0,51-30.5,73.6-9s19.4,53.5-22.1,93s-68.8,75.5-44.1,99s136.6-10,185-56
+                      s71.5-114,115.6-114S429.1,699,467,735s106.7,18.5,106.7,18.5;"/>
         </path>
 
-      	<path id="flosse2" class="flosse2" d="M124.6,661.1c-4.8,3.1-13.2,7.3-23.9,5.9c-10.7-1.4-36.7,3.3-31.9,1.7s24-14.6,29.1-18.9
-        	s12.9-9.7,22.1-11.7s24.1,5.3,24.1,5.3S129.5,658,124.6,661.1z">
-          <animateMotion dur="3s"
-          values="0,-15; 0,35; 0,-15"
-          repeatCount="indefinite" />
-        </path>
+        <g class="flossen">
+      	   <path id="flosse1" class="flosse1" d="M82.6,671.1c-4.8,3.1-13.2,7.3-23.9,5.9c-10.7-1.4-36.7,3.3-31.9,1.7s24-14.6,29.1-18.9
+        	                                       s12.9-9.7,22.1-11.7s24.1,5.3,24.1,5.3S87.5,668,82.6,671.1z">
+             <animateMotion dur="3s"
+                            values="0,0; 0,50; 0,0"
+                            repeatCount="indefinite" />
+            </path>
 
-</g>
+      	    <path id="flosse2" class="flosse2" d="M124.6,661.1c-4.8,3.1-13.2,7.3-23.9,5.9c-10.7-1.4-36.7,3.3-31.9,1.7s24-14.6,29.1-18.9
+        	                                        s12.9-9.7,22.1-11.7s24.1,5.3,24.1,5.3S129.5,658,124.6,661.1z">
+              <animateMotion dur="3s"
+                            values="0,-15; 0,35; 0,-15"
+                              repeatCount="indefinite" />
+            </path>
+        </g>
 
         <g class="arme">
-
           <path id="eins" class="arm">
+              <animate  attributeName="d"
+                        dur="3000ms"
+                        repeatCount="indefinite"
+                        values="
+                        M188.6,680c0,0,46,48,63,65s37,24,60,24s80-36,141-36s121,0,121,0;
 
-              <animate
-                attributeName="d"
-                dur="3000ms"
-                repeatCount="indefinite"
-                values="
-               M188.6,680c0,0,46,48,63,65s37,24,60,24s80-36,141-36s121,0,121,0;
+                        M357.8,680c0,0,91,48,124.6,65s73.2,24,118.7,24s158.2-36,278.9-36s239.3,0,239.3,0;
 
-               M357.8,680c0,0,91,48,124.6,65s73.2,24,118.7,24s158.2-36,278.9-36s239.3,0,239.3,0;
-
-               M188.6,680c0,0,46,48,63,65s37,24,60,24s80-36,141-36s121,0,121,0;"/>
+                        M188.6,680c0,0,46,48,63,65s37,24,60,24s80-36,141-36s121,0,121,0;"/>
           </path>
+
           <path id="zwei" class="arm" style="transform: translate(10px, 20px)">
+              <animate  attributeName="d"
+                        dur="3000ms"
+                        repeatCount="indefinite"
+                        values="
+                        M188.6,680c0,0,46,48,63,65s37,24,60,24s80-36,141-36s121,0,121,0;
 
-              <animate
-                attributeName="d"
-                dur="3000ms"
-                repeatCount="indefinite"
-                values="
-               M188.6,680c0,0,46,48,63,65s37,24,60,24s80-36,141-36s121,0,121,0;
+                        M357.8,680c0,0,91,48,124.6,65s73.2,24,118.7,24s158.2-36,278.9-36s239.3,0,239.3,0;
 
-               M357.8,680c0,0,91,48,124.6,65s73.2,24,118.7,24s158.2-36,278.9-36s239.3,0,239.3,0;
-
-               M188.6,680c0,0,46,48,63,65s37,24,60,24s80-36,141-36s121,0,121,0;"/>
+                        M188.6,680c0,0,46,48,63,65s37,24,60,24s80-36,141-36s121,0,121,0;"/>
           </path>
+
           <path id="drei" class="arm">
+              <animate  attributeName="d"
+                        dur="3000ms"
+                        repeatCount="indefinite"
+                        values="
+                        M193.6,737c0,0,59-31,118-31s38,0,103,0c54,0,138,22,159,22;
 
-              <animate
-                attributeName="d"
-                dur="3000ms"
-                repeatCount="indefinite"
-                values="
-               M193.6,737c0,0,59-31,118-31s38,0,103,0c54,0,138,22,159,22;
+                        M367.7,737c0,0,116.7-31,233.4-31s75.2,0,203.7,0c106.8,0,272.9,22,314.5,22;
 
-               M367.7,737c0,0,116.7-31,233.4-31s75.2,0,203.7,0c106.8,0,272.9,22,314.5,22;
-
-               M193.6,737c0,0,59-31,118-31s38,0,103,0c54,0,138,22,159,22;"/>
+                        M193.6,737c0,0,59-31,118-31s38,0,103,0c54,0,138,22,159,22;"/>
           </path>
 
           <path id="vier" class="arm">
+              <animate  attributeName="d"
+                        dur="3000ms"
+                        repeatCount="indefinite"
+                        values="
+                        M204.6,650c0,0,15.5,25.5,41,51s123,65,154,65s33-25,174-25;
 
-              <animate
-                attributeName="d"
-                dur="3000ms"
-                repeatCount="indefinite"
-                values="
-               M204.6,650c0,0,15.5,25.5,41,51s123,65,154,65s33-25,174-25;
+                        M389.4,650c0,0,30.7,25.5,81.1,51s243.3,65,304.6,65s65.3-25,344.1-25;
 
-               M389.4,650c0,0,30.7,25.5,81.1,51s243.3,65,304.6,65s65.3-25,344.1-25;
-
-               M204.6,650c0,0,15.5,25.5,41,51s123,65,154,65s33-25,174-25;"/>
+                        M204.6,650c0,0,15.5,25.5,41,51s123,65,154,65s33-25,174-25;"/>
           </path>
 
           <path id="fuenf" class="arm">
+              <animate  attributeName="d"
+                        dur="3000ms"
+                        repeatCount="indefinite"
+                        values="
+                        M193.6,714c0,0,27-19,48-19s88.5,36.5,104,52s65,32,99,32s56-21,86-21c30,0,43,0,43,0;
 
-              <animate
-                attributeName="d"
-                dur="3000ms"
-                repeatCount="indefinite"
-                values="
-               M193.6,714c0,0,27-19,48-19s88.5,36.5,104,52s65,32,99,32s56-21,86-21c30,0,43,0,43,0;
+                        M367.7,714c0,0,53.4-19,94.9-19s175,36.5,205.7,52s128.6,32,195.8,32s110.8-21,170.1-21
+               	        c59.3,0,85,0,85,0;
 
-               M367.7,714c0,0,53.4-19,94.9-19s175,36.5,205.7,52s128.6,32,195.8,32s110.8-21,170.1-21
-               	c59.3,0,85,0,85,0;
-
-               M193.6,714c0,0,27-19,48-19s88.5,36.5,104,52s65,32,99,32s56-21,86-21c30,0,43,0,43,0;"/>
+                        M193.6,714c0,0,27-19,48-19s88.5,36.5,104,52s65,32,99,32s56-21,86-21c30,0,43,0,43,0;"/>
           </path>
 
           <path id="sechs" class="arm">
+              <animate  attributeName="d"
+                        dur="3000ms"
+                        repeatCount="indefinite"
+                        values="
+                        M190.6,657.9c0,0,14.3,22.4,36.7,22.4s41.8-7.1,59.1-7.1c43.8,0,77.5,38.7,94.8,56.1
+                	       c29.1,29.1,102,43.8,125.4,43.8s45.9-13.3,67.3-13.3;
 
-              <animate
-                attributeName="d"
-                dur="3000ms"
-                repeatCount="indefinite"
-                values="
-                M190.6,657.9c0,0,14.3,22.4,36.7,22.4s41.8-7.1,59.1-7.1c43.8,0,77.5,38.7,94.8,56.1
-                	c29.1,29.1,102,43.8,125.4,43.8s45.9-13.3,67.3-13.3;
+                        M361.7,657.9c0,0,28.3,22.4,72.6,22.4s82.7-7.1,116.9-7.1c86.6,0,153.3,38.7,187.5,56.1
+                  	    c57.6,29.1,201.7,43.8,248,43.8s90.8-13.3,133.1-13.3;
 
-                  M361.7,657.9c0,0,28.3,22.4,72.6,22.4s82.7-7.1,116.9-7.1c86.6,0,153.3,38.7,187.5,56.1
-                  	c57.6,29.1,201.7,43.8,248,43.8s90.8-13.3,133.1-13.3;
-
-                M190.6,657.9c0,0,14.3,22.4,36.7,22.4s41.8-7.1,59.1-7.1c43.8,0,77.5,38.7,94.8,56.1
-                	c29.1,29.1,102,43.8,125.4,43.8s45.9-13.3,67.3-13.3;"/>
+                        M190.6,657.9c0,0,14.3,22.4,36.7,22.4s41.8-7.1,59.1-7.1c43.8,0,77.5,38.7,94.8,56.1
+                	      c29.1,29.1,102,43.8,125.4,43.8s45.9-13.3,67.3-13.3;"/>
           </path>
 
           <path id="sieben" class="arm">
+              <animate  attributeName="d"
+                        dur="3000ms"
+                        repeatCount="indefinite"
+                        values="
+                        M226.6,652c0,0,13,38,47,38s62-38,126-38s63,65,174,65;
 
-              <animate
-                attributeName="d"
-                dur="3000ms"
-                repeatCount="indefinite"
-                values="
-                M226.6,652c0,0,13,38,47,38s62-38,126-38s63,65,174,65;
+                        M432.9,652c0,0,25.7,38,93,38s122.6-38,249.2-38s124.6,65,344.1,65;
 
-                  M432.9,652c0,0,25.7,38,93,38s122.6-38,249.2-38s124.6,65,344.1,65;
-
-                M226.6,652c0,0,13,38,47,38s62-38,126-38s63,65,174,65;"/>
+                        M226.6,652c0,0,13,38,47,38s62-38,126-38s63,65,174,65;"/>
           </path>
 
           <path id="acht" class="arm">
+              <animate  attributeName="d"
+                        dur="3000ms"
+                        repeatCount="indefinite"
+                        values="
+                        M251.6,669c0,0,42-29,81-29s70,41,93,64s148,19,148,19;
 
-              <animate
-                attributeName="d"
-                dur="3000ms"
-                repeatCount="indefinite"
-                values="
-                M251.6,669c0,0,42-29,81-29s70,41,93,64s148,19,148,19;
+                        M482.4,669c0,0,83.1-29,160.2-29s138.4,41,183.9,64s292.7,19,292.7,19;
 
-                  M482.4,669c0,0,83.1-29,160.2-29s138.4,41,183.9,64s292.7,19,292.7,19;
-
-                M251.6,669c0,0,42-29,81-29s70,41,93,64s148,19,148,19;"/>
+                        M251.6,669c0,0,42-29,81-29s70,41,93,64s148,19,148,19;"/>
           </path>
 
         </g>
@@ -238,13 +239,13 @@
          </circle>
           <circle id="pupille" class="pupille" cx="599.1" cy="739" r="9.5"/>
           <path id="kappe" class="kappe" d="M620.6,694.7c0,0,69.9-3.1,128.8,15.2c58.9,18.4,135.2,45,135.2,45s-84.7,31.8-146.7,32.6
-          	s-119.3-3.6-119.3-3.6s12.3-15.6,15.3-37.7C636.9,724.1,627.8,699.4,620.6,694.7z"/>
+          	                                s-119.3-3.6-119.3-3.6s12.3-15.6,15.3-37.7C636.9,724.1,627.8,699.4,620.6,694.7z"/>
           <path id="spitze" class="kopf" d="M862.2,747.4l-28.5-9.7c0,0,13.9-3.6,21.8-6c7.9-2.4,20.8-3.9,34.4,7.5
-        		c13.5,11.4,50.1,22.8,43,22.1c-7-0.7-38.6,9.7-47.4,14.1c-8.8,4.4-21.6,9-34.8,5.6s-29.4-29.7-29.4-29.7L862.2,747.4z"/>
+        		                                c13.5,11.4,50.1,22.8,43,22.1c-7-0.7-38.6,9.7-47.4,14.1c-8.8,4.4-21.6,9-34.8,5.6s-29.4-29.7-29.4-29.7L862.2,747.4z"/>
 
-            <animateMotion dur="3s"
-      values="0,0; 450,0;  0,0"
-      repeatCount="indefinite" />
+            <animateMotion  dur="3s"
+                            values="0,0; 450,0;  0,0"
+                            repeatCount="indefinite" />
         </g>
       </svg>
     </div>
@@ -558,26 +559,7 @@
             }
         });
     </script>
-    <script type="text/javascript">
-    if (!/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && $(window).width() > 400) {
 
-       skrollr.init({
-         forceHeight: false,
-         smoothScrolling: true,
-         render: function(data) {
-           if (data.direction == 'up') {
-
-             document.querySelector('.fish').classList.add('wenden')
-
-           } else {
-             document.querySelector('.fish').classList.remove('wenden')
-           }
-         }
-       });
-
-     }
-
-    </script>
 </body>
 
 </html>

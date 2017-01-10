@@ -28,33 +28,131 @@ body {
     z-index: 100;
 }
 
-.fish {
+.fish1 {
     position: absolute;
     width: 100px;
     height: 100px;
     z-index: 100;
-    animation: fish 7s infinite alternate;
+    margin: 200px 0px 0px 800px;
+    animation: fish1 15s infinite linear;
 }
 
-.wenden {
-  transform: scaleX(-1);
+.fish2 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 100;
+    margin: 250px 0px 0px 700px;
+    animation: fish1 20s infinite linear;
+}
+
+.fish3 {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    z-index: 100;
+    margin: 170px 0px 0px 600px;
+    animation: fish1 10s infinite linear;
 }
 
 
-@keyframes fish {
+.fish_koerper1{
+  fill:#48B777;
+}
+
+.fish_koerper2{
+  fill:#7c275e;
+}
+
+.fish_koerper3{
+  fill:#5acbe5;
+}
+
+.fish_auge{
+  fill:#FFFFFF;
+}
+
+@keyframes fish1 {
     0% {
-        top: 0px;
-        left: 0px;
+      left: 0px;
+      transform: scaleX(1);
     }
+
+    45% {
+      left: 300px;
+      transform: scaleX(1);
+    }
+
     50% {
-        top: 200px;
-        left: 200px;
+      left: 300px;
+      transform: scaleX(-1);
     }
+
+    95% {
+      left: 0px;
+      transform: scaleX(-1);
+    }
+
     100% {
-        top: 200px;
-        left: 400px;
+      left: 0px;
+      transform: scaleX(1);
     }
 }
+
+@keyframes fish2 {
+    0% {
+      left: 0px;
+      transform: scaleX(1);
+    }
+
+    45% {
+      left: 200px;
+      transform: scaleX(1);
+    }
+
+    50% {
+      left: 200px;
+      transform: scaleX(-1);
+    }
+
+    95% {
+      left: 0px;
+      transform: scaleX(-1);
+    }
+
+    100% {
+      left: 0px;
+      transform: scaleX(1);
+    }
+}
+
+@keyframes fish3 {
+    0% {
+      left: 0px;
+      transform: scaleX(1);
+    }
+
+    45% {
+      left: 500px;
+      transform: scaleX(1);
+    }
+
+    50% {
+      left: 500px;
+      transform: scaleX(-1);
+    }
+
+    95% {
+      left: 0px;
+      transform: scaleX(-1);
+    }
+
+    100% {
+      left: 0px;
+      transform: scaleX(1);
+    }
+}
+
 
 /* VON HIER NEU */
 
