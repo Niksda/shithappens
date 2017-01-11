@@ -20,42 +20,41 @@ header{
     position: relative;
     width: 100%;
     min-height: 10vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #fff;
+    display: block;
+
+  background: url(img/wellen.svg) no-repeat center center fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;;
 }
 
 .scroll {
     font-size: 1rem;
     font-weight: 400;
-    position: absolute;
+    position: relative;
     width: 100%;
+    height: 50%;
+    display: block;
     text-align: center;
-    margin-top:0.5vw;
-}
-
-.scroll img{
-    width: 20px
+    padding-top:0.5vw;
+    background: #fff;
+    float: left;
 }
 
 .pfeil {
+    width: 1.5vw;
     margin: 0 auto;
     animation: pfeilbouncing 0.5s ease-in infinite alternate;
 }
 
 @keyframes pfeilbouncing {
     from {
-        transform: translateY(0.5vw);
+        transform: translateY(-5px);
     }
     to {
-        transform: translateY(1.5vw);
+        transform: translateY(0);
     }
-}
-
-.wellen {
-    margin-top: 11vh;
-    width: 100%;
 }
 
 .content {
