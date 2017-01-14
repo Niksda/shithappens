@@ -1,0 +1,34 @@
+.qualle {
+    position: absolute;
+    width: 30vw;
+    z-index: 100;
+    animation: qualle 20s infinite linear;
+    transform: rotate(-40deg);
+}
+
+@keyframes qualle {
+    0% {
+        top: 30%;
+        left: 30%;
+    }
+    50% {
+        top: 10%;
+        left: 10%;
+    }
+    100% {
+        top: 30%;
+        left: 30%;
+    }
+}
+
+.qualle-kopf {
+  fill:#A9CEED;
+}
+
+.qualle-arm {
+  fill:none;
+  stroke:#A9CEED;
+  stroke-width:11;
+  stroke-linecap:round;
+  stroke-miterlimit:10;
+}
