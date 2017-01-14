@@ -10,22 +10,46 @@ body {
     background: #000;
 }
 
-.verlauf {
-    width: 100%;
-    height: 2000px;
-    margin-top: -50px;
-    background: linear-gradient(to bottom, #47afba, black);
+.scroll {
+    font-size: 15px;
+    font-weight: 400;
     position: absolute;
-    z-index: -100;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0px 0px 0px;
+}
+
+.scroll img{
+  width: 20px;
+}
+
+.pfeil {
+  margin: 0 auto;
+  animation: pfeilbouncing 0.5s ease-in infinite alternate;
+}
+
+@keyframes pfeilbouncing {
+  from {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.wellen {
+    width: 100%;
 }
 
 .submarine {
     position: fixed;
-    top: 0;
-    left: 0;
     width: 200px;
     height: 200px;
     z-index: 100;
+}
+
+.submarine svg{
+  margin-left: 40px;
 }
 
 .fish1 {
@@ -33,7 +57,7 @@ body {
     width: 100px;
     height: 100px;
     z-index: 100;
-    margin: 200px 0px 0px 800px;
+    margin: 200px 0px 0px 30vw;
     animation: fish1 15s infinite linear;
 }
 
@@ -42,7 +66,7 @@ body {
     width: 100px;
     height: 100px;
     z-index: 100;
-    margin: 250px 0px 0px 700px;
+    margin: 250px 0px 0px 35vw;
     animation: fish1 20s infinite linear;
 }
 
@@ -51,10 +75,9 @@ body {
     width: 100px;
     height: 100px;
     z-index: 100;
-    margin: 170px 0px 0px 600px;
+    margin: 170px 0px 0px 40vw;
     animation: fish1 10s infinite linear;
 }
-
 
 .fish_koerper1{
   fill:#48B777;
@@ -157,29 +180,26 @@ body {
 /* VON HIER NEU */
 
 .octopus {
-    margin-top: 100vw;
+  margin-top: 1000px;
     position: absolute;
-    width: 60vw;
+    width: 1000px;
+    height: 1000px;
     z-index: 100;
     animation: octopus 7s infinite alternate;
-    transform: rotate(-100deg);
 }
 
 @keyframes octopus {
     0% {
         top: 0px;
         left: 100px;
-        transform: rotate(-100deg);
     }
     50% {
         top: 0px;
         left: 400px;
-        transform: rotate(-80deg);
     }
     100% {
         top: 0px;
         left: 500px;
-        transform: rotate(-100deg);
     }
 }
 
@@ -231,31 +251,14 @@ body {
 
 /* BIS HIER NEU */
 
-.scroll {
-    font-size: 15px;
-    font-weight: 400;
+
+.verlauf {
+    width: 100%;
+    height: 2000px;
+    margin-top: -50px;
+    background: linear-gradient(to bottom, #47afba, black);
     position: absolute;
-    width: 100%;
-    text-align: center;
-    margin: 20px 0px 0px 0px;
-}
-
-.pfeil {
-  margin: 0 auto;
-  animation: pfeilbouncing 0.5s ease-in infinite alternate;
-}
-
-@keyframes pfeilbouncing {
-  from {
-    transform: translateY(-5px);
-  }
-  to {
-    transform: translateY(0px);
-  }
-}
-
-.wellen {
-    width: 100%;
+    z-index: -100;
 }
 
 .content {
