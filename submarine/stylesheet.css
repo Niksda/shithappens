@@ -43,9 +43,11 @@ body {
 
 .submarine {
     position: fixed;
-    width: 200px;
-    height: 200px;
+    top: 0;
+    left: 0;
+    width: 300px;
     z-index: 100;
+    margin-left: 3vw;
 }
 
 .submarine svg{
@@ -180,28 +182,32 @@ body {
 /* VON HIER NEU */
 
 .octopus {
-  margin-top: 1000px;
+    margin-top: 100vw;
     position: absolute;
-    width: 1000px;
-    height: 1000px;
+    width: 60vw;
     z-index: 100;
     animation: octopus 7s infinite alternate;
+    transform: rotate(-100deg);
 }
 
 @keyframes octopus {
     0% {
         top: 0px;
         left: 100px;
+        transform: rotate(-100deg);
     }
     50% {
         top: 0px;
         left: 400px;
+        transform: rotate(-80deg);
     }
     100% {
         top: 0px;
         left: 500px;
+        transform: rotate(-100deg);
     }
 }
+
 
 .tentakel1 {
   fill: none;
