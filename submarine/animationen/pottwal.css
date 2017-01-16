@@ -1,0 +1,65 @@
+.pottwal-flossen{fill:#232524;}
+.pottwal-koerper{fill:#565752;}
+.pottwal-auge{fill:#FFFFFF;}
+
+
+.pottwal {
+  position: absolute;
+  width: 50vw;
+  z-index: 100;
+  animation: pottwal 30s infinite linear;
+}
+
+@keyframes pottwal {
+  0% {
+      top: 30%;
+      left: 30%;
+  }
+  50% {
+      top: 10%;
+      left: 10%;
+  }
+  100% {
+      top: 30%;
+      left: 30%;
+  }
+}
+
+
+#pottwal-flossen-1{
+  animation: pottwal-flossen-1 3s infinite alternate ;
+  transform-origin: 350px 550px;
+}
+
+@keyframes pottwal-flossen-1{
+0% {
+  transform: rotate(-30deg);
+}
+
+50% {
+   transform: rotate(0deg);
+}
+
+100% {
+   transform: rotate(-30deg);
+}
+}
+
+#pottwal-flossen-2{
+  animation: pottwal-flossen-1 3s infinite alternate ;
+  transform-origin: 830px 500px;
+}
+
+@keyframes pottwal-flossen-2{
+0% {
+  transform: rotate(0deg);
+}
+
+50% {
+   transform: rotate(-1deg);
+}
+
+100% {
+   transform: rotate(0deg);
+}
+}
