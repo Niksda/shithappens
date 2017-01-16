@@ -1,0 +1,70 @@
+.laternenfisch-flosse{fill:#907C59;}
+.laternenfisch-zunge{fill:#603D1F;}
+.laternenfisch-zaehne{fill:#BEBBA9;}
+.laternenfisch-laterne{fill:none;stroke:#6B675B;stroke-width:8;stroke-miterlimit:10;}
+.laternenfisch-auge{fill:#FFFFFF;}
+.laternenfisch-koerper{fill:#6B675B;}
+
+.laternenfisch {
+  position: absolute;
+  width: 40vw;
+  z-index: 100;
+  animation: laternenfisch 30s infinite linear;
+}
+
+@keyframes laternenfisch {
+  0% {
+      top: 30%;
+      left: 30%;
+  }
+  50% {
+      top: 10%;
+      left: 10%;
+  }
+  100% {
+      top: 30%;
+      left: 30%;
+  }
+}
+
+
+.laternenfisch-laterne{
+  animation: laternenfisch-laterne 5s infinite alternate ;
+  transform-origin: 231.9px 386px;
+}
+
+@keyframes laternenfisch-laterne{
+  0% {
+    transform: rotate(-20deg);
+  }
+
+  50% {
+     transform: rotate(0deg);
+  }
+
+  100% {
+     transform: rotate(-20deg);
+  }
+}
+
+.laternenfisch-lampe{
+  animation: laternenfisch-lampe 5s infinite alternate ;
+  transform-origin: 231.9px 386px;
+}
+
+@keyframes laternenfisch-lampe{
+  0% {
+    transform: rotate(-20deg);
+    fill:#71f8ff;
+  }
+
+  50% {
+    transform: rotate(0deg);
+    fill:#FFFFFF;
+  }
+
+  100% {
+    transform: rotate(-20deg);
+    fill:#71f8ff;
+  }
+}
