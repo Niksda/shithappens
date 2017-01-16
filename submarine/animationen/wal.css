@@ -1,0 +1,66 @@
+.wal-flossen{fill:#404355;}
+.wal-koerper{fill:#4C4F6C;}
+.wal-bauch{fill:#9CCBE5;}
+.wal-auge{fill:#FFFFFF;}
+.wal-mund{fill:#B6BFFF;}
+
+.wal {
+  position: absolute;
+  width: 40vw;
+  z-index: 100;
+  animation: wal 30s infinite linear;
+}
+
+@keyframes wal {
+  0% {
+      top: 30%;
+      left: 30%;
+  }
+  50% {
+      top: 10%;
+      left: 10%;
+  }
+  100% {
+      top: 30%;
+      left: 30%;
+  }
+}
+
+
+#wal-flossen-1{
+  animation: wal-flossen-1 5s infinite alternate ;
+  transform-origin: 350px 500px;
+}
+
+@keyframes wal-flossen-1{
+0% {
+  transform: rotate(-25deg);
+}
+
+50% {
+   transform: rotate(0deg);
+}
+
+100% {
+   transform: rotate(-25deg);
+}
+}
+
+#wal-flossen-2{
+  animation: wal-flossen-1 5s infinite alternate ;
+  transform-origin: 800px 300px;
+}
+
+@keyframes wal-flossen-2{
+0% {
+  transform: rotate(0deg);
+}
+
+50% {
+   transform: rotate(-3deg);
+}
+
+100% {
+   transform: rotate(0deg);
+}
+}
