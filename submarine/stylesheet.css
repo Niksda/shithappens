@@ -1,13 +1,48 @@
-* {
+*, *:after, *:before {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    margin: 0;
     padding: 0;
-    font-family: 'Lato', sans-serif;
+    margin: 0;
 }
 
-body {
+body, html {
     line-height: 1.6;
     background: #000;
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    height: auto;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.z1 {
+    z-index: 1;
+}
+
+.z10 {
+    z-index: 10;
+}
+
+.z100 {
+    z-index: 100;
+}
+
+.z1000 {
+    z-index: 1000;
+}
+
+.z10000 {
+    z-index: 10000;
+}
+
+.wrapper {
+    border-top: 20vh solid #47afba;
 }
 
 .scroll {
@@ -19,22 +54,22 @@ body {
     margin: 20px 0px 0px 0px;
 }
 
-.scroll img{
-  width: 20px;
+.scroll img {
+    width: 20px;
 }
 
 .pfeil {
-  margin: 0 auto;
-  animation: pfeilbouncing 0.5s ease-in infinite alternate;
+    margin: 0 auto;
+    animation: pfeilbouncing 0.5s ease-in infinite alternate;
 }
 
 @keyframes pfeilbouncing {
-  from {
-    transform: translateY(-5px);
-  }
-  to {
-    transform: translateY(0px);
-  }
+    from {
+        transform: translateY(-5px);
+    }
+    to {
+        transform: translateY(0px);
+    }
 }
 
 .wellen {
@@ -46,145 +81,280 @@ body {
     top: 0;
     left: 0;
     width: 300px;
-    z-index: 100;
     margin-left: 3vw;
 }
 
-.submarine svg{
-  margin-left: 40px;
+.submarine svg {
+    margin-left: 40px;
+}
+
+.fish {
+    position: absolute;
+    width: 100vw;
+    padding-left: 25%;
+    padding-top: 10vh;
+}
+
+.fish1, .fish2, .fish3 {
+    position: relative;
+    width: 10%;
 }
 
 .fish1 {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    z-index: 100;
-    margin: 200px 0px 0px 30vw;
     animation: fish1 15s infinite linear;
+    top: 20%;
+    left: 80%;
 }
 
 .fish2 {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    z-index: 100;
-    margin: 250px 0px 0px 35vw;
-    animation: fish1 20s infinite linear;
+    animation: fish2 20s infinite linear;
+    top: 25%;
+    left: 70%;
 }
 
 .fish3 {
-    position: absolute;
-    width: 100px;
-    height: 100px;
-    z-index: 100;
-    margin: 170px 0px 0px 40vw;
-    animation: fish1 10s infinite linear;
+    animation: fish3 10s infinite linear;
+    top: 17%;
+    left: 60%;
 }
 
-.fish_koerper1{
-  fill:#48B777;
+.fish_koerper1 {
+    fill: #48B777;
 }
 
-.fish_koerper2{
-  fill:#7c275e;
+.fish_koerper2 {
+    fill: #7c275e;
 }
 
-.fish_koerper3{
-  fill:#5acbe5;
+.fish_koerper3 {
+    fill: #5acbe5;
 }
 
-.fish_auge{
-  fill:#FFFFFF;
+.fish_auge {
+    fill: #FFFFFF;
 }
 
 @keyframes fish1 {
     0% {
-      left: 0px;
-      transform: scaleX(1);
+        left: 0;
+        transform: scaleX(1);
     }
-
     45% {
-      left: 300px;
-      transform: scaleX(1);
+        left: 30%;
+        transform: scaleX(1);
     }
-
     50% {
-      left: 300px;
-      transform: scaleX(-1);
+        left: 30%;
+        transform: scaleX(-1);
     }
-
     95% {
-      left: 0px;
-      transform: scaleX(-1);
+        left: 0;
+        transform: scaleX(-1);
     }
-
     100% {
-      left: 0px;
-      transform: scaleX(1);
+        left: 0;
+        transform: scaleX(1);
     }
 }
 
 @keyframes fish2 {
     0% {
-      left: 0px;
-      transform: scaleX(1);
+        left: 0;
+        transform: scaleX(1);
     }
-
     45% {
-      left: 200px;
-      transform: scaleX(1);
+        left: 20%;
+        transform: scaleX(1);
     }
-
     50% {
-      left: 200px;
-      transform: scaleX(-1);
+        left: 20%;
+        transform: scaleX(-1);
     }
-
     95% {
-      left: 0px;
-      transform: scaleX(-1);
+        left: 0;
+        transform: scaleX(-1);
     }
-
     100% {
-      left: 0px;
-      transform: scaleX(1);
+        left: 0;
+        transform: scaleX(1);
     }
 }
 
 @keyframes fish3 {
     0% {
-      left: 0px;
-      transform: scaleX(1);
+        left: 0;
+        transform: scaleX(1);
     }
-
     45% {
-      left: 500px;
-      transform: scaleX(1);
+        left: 50%;
+        transform: scaleX(1);
     }
-
     50% {
-      left: 500px;
-      transform: scaleX(-1);
+        left: 50%;
+        transform: scaleX(-1);
     }
-
     95% {
-      left: 0px;
-      transform: scaleX(-1);
+        left: 0;
+        transform: scaleX(-1);
     }
-
     100% {
-      left: 0px;
-      transform: scaleX(1);
+        left: 0;
+        transform: scaleX(1);
     }
 }
 
+.wal-flossen {
+    fill: #404355;
+}
 
-/* VON HIER NEU */
+.wal-koerper {
+    fill: #4C4F6C;
+}
+
+.wal-bauch {
+    fill: #9CCBE5;
+}
+
+.wal-auge {
+    fill: #FFFFFF;
+}
+
+.wal-mund {
+    fill: #B6BFFF;
+}
+
+.wal {
+    position: absolute;
+    width: 40vw;
+    margin-top: 1000px;
+    z-index: 100;
+    animation: wal 30s infinite linear;
+}
+
+@keyframes wal {
+    0% {
+        top: 30%;
+        left: 30%;
+    }
+    50% {
+        top: 10%;
+        left: 10%;
+    }
+    100% {
+        top: 30%;
+        left: 30%;
+    }
+}
+
+#wal-flossen-1 {
+    animation: wal-flossen-1 5s infinite alternate;
+    transform-origin: 350px 500px;
+}
+
+@keyframes wal-flossen-1 {
+    0% {
+        transform: rotate(-25deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-25deg);
+    }
+}
+
+#wal-flossen-2 {
+    animation: wal-flossen-1 5s infinite alternate;
+    transform-origin: 800px 300px;
+}
+
+@keyframes wal-flossen-2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-3deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.pottwal-flossen {
+    fill: #232524;
+}
+
+.pottwal-koerper {
+    fill: #565752;
+}
+
+.pottwal-auge {
+    fill: #FFFFFF;
+}
+
+.pottwal {
+    position: absolute;
+    width: 50vw;
+    z-index: 100;
+    margin-top: 300px;
+    animation: pottwal 30s infinite linear;
+}
+
+@keyframes pottwal {
+    0% {
+        top: 30%;
+        left: 30%;
+    }
+    50% {
+        top: 10%;
+        left: 10%;
+    }
+    100% {
+        top: 30%;
+        left: 30%;
+    }
+}
+
+#pottwal-flossen-1 {
+    animation: pottwal-flossen-1 3s infinite alternate;
+    transform-origin: 350px 550px;
+}
+
+@keyframes pottwal-flossen-1 {
+    0% {
+        transform: rotate(-30deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-30deg);
+    }
+}
+
+#pottwal-flossen-2 {
+    animation: pottwal-flossen-1 3s infinite alternate;
+    transform-origin: 830px 500px;
+}
+
+@keyframes pottwal-flossen-2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(-1deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
 
 .octopus {
-    margin-top: 100vw;
+    margin-top: 15000px;
+    ;
     position: absolute;
-    width: 60vw;
+    width: 100%;
+    height: 225vmin;
     z-index: 100;
     animation: octopus 7s infinite alternate;
     transform: rotate(-100deg);
@@ -208,55 +378,209 @@ body {
     }
 }
 
-
 .tentakel1 {
-  fill: none;
-  stroke: #CC8166;
-  stroke-width: 10;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10;
+    fill: none;
+    stroke: #CC8166;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
 }
 
 .flosse1 {
-  fill: #CC8166;
+    fill: #CC8166;
 }
 
 .tentakel2 {
-  transform: translate(50px, -30px);
-  fill: none;
-  stroke: #BF7862;
-  stroke-width: 10;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10;
+    transform: translate(50px, -30px);
+    fill: none;
+    stroke: #BF7862;
+    stroke-width: 10;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
 }
+
 .flosse2 {
-  fill: #BF7862;
+    fill: #BF7862;
 }
+
 .kopf {
-  fill: #DB9679;
+    fill: #DB9679;
 }
+
 .auge {
-  fill: #D9E6DF;
+    fill: #D9E6DF;
 }
+
 .pupille {
-  fill: #023C40;
+    fill: #023C40;
 }
+
 .kappe {
-  fill: #CC8A72;
+    fill: #CC8A72;
 }
+
 .arm {
-  fill: none;
-  stroke: #DB9679;
-  stroke-width: 7;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-miterlimit: 10;
+    fill: none;
+    stroke: #DB9679;
+    stroke-width: 7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-miterlimit: 10;
 }
 
-/* BIS HIER NEU */
+.qualle {
+    position: absolute;
+    width: 160vw;
+    z-index: 100;
+    margin-top: 8500px;
+    animation: qualle 20s infinite linear;
+    transform: rotate(-40deg);
+}
 
+@keyframes qualle {
+    0% {
+        top: 30%;
+        left: 30%;
+    }
+    50% {
+        top: 10%;
+        left: 10%;
+    }
+    100% {
+        top: 30%;
+        left: 30%;
+    }
+}
+
+.qualle-kopf {
+    fill: #A9CEED;
+}
+
+.qualle-arm {
+    fill: none;
+    stroke: #A9CEED;
+    stroke-width: 11;
+    stroke-linecap: round;
+    stroke-miterlimit: 10;
+}
+
+.laternenfisch-flosse {
+    fill: #907C59;
+}
+
+.laternenfisch-zunge {
+    fill: #603D1F;
+}
+
+.laternenfisch-zaehne {
+    fill: #BEBBA9;
+}
+
+.laternenfisch-laterne {
+    fill: none;
+    stroke: #6B675B;
+    stroke-width: 8;
+    stroke-miterlimit: 10;
+}
+
+.laternenfisch-auge {
+    fill: #FFFFFF;
+}
+
+.laternenfisch-koerper {
+    fill: #6B675B;
+}
+
+.laternenfisch {
+    position: absolute;
+    width: 40vw;
+    z-index: 100;
+    margin-top: 13000px;
+    animation: laternenfisch 30s infinite linear;
+}
+
+@keyframes laternenfisch {
+    0% {
+        top: 30%;
+        left: 30%;
+    }
+    50% {
+        top: 10%;
+        left: 10%;
+    }
+    100% {
+        top: 30%;
+        left: 30%;
+    }
+}
+
+.laternenfisch-laterne {
+    animation: laternenfisch-laterne 5s infinite alternate;
+    transform-origin: 231.9px 386px;
+}
+
+@keyframes laternenfisch-laterne {
+    0% {
+        transform: rotate(-20deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-20deg);
+    }
+}
+
+.laternenfisch-lampe {
+    animation: laternenfisch-lampe 5s infinite alternate;
+    transform-origin: 231.9px 386px;
+}
+
+@keyframes laternenfisch-lampe {
+    0% {
+        transform: rotate(-20deg);
+        fill: #71f8ff;
+    }
+    50% {
+        transform: rotate(0deg);
+        fill: #FFFFFF;
+    }
+    100% {
+        transform: rotate(-20deg);
+        fill: #71f8ff;
+    }
+}
+
+.titanic, .canyon, .everest, .hanskrebs {
+    position: absolute;
+    width: 100%;
+}
+
+.hans {
+    position: absolute;
+    margin-top: 22880px;
+    width: 100vw;
+}
+
+.hanskrebs {
+    transform: scale(0.2);
+    animation: krebs 3s infinite alternate;
+    position: absolute;
+    bottom: -350px;
+}
+
+@keyframes krebs {
+    from {
+        padding-left: 50vw;
+        padding-right: 0vw;
+    }
+    to {
+        padding-left: 0vw;
+        padding-right: 50vw;
+    }
+}
 
 .verlauf {
     width: 100%;
@@ -264,7 +588,6 @@ body {
     margin-top: -50px;
     background: linear-gradient(to bottom, #47afba, black);
     position: absolute;
-    z-index: -100;
 }
 
 .content {
@@ -274,23 +597,22 @@ body {
 }
 
 .content-text {
-    font-size: 30px;
+    font-size: 4vw;
     font-weight: 400;
     color: white;
     letter-spacing: 2px;
     text-transform: uppercase;
+    padding-left: 25%;
 }
 
 .content-wale {
-    margin: 840px 0px 0px 0px;
-    padding: 0px 0px 0px 250px;
+    top: 840px;
     position: absolute;
     width: 100%
 }
 
 .content-wale-background {
-    margin: 1018px 0px 0px 0px;
-    padding: 0px 0px 0px 200px;
+    top: 1018px;
     position: absolute;
     background: #1630c4;
     opacity: 0.3;
@@ -299,86 +621,71 @@ body {
 }
 
 .content-sunlight {
-    margin: 1910px 0px 0px 0px;
-    padding: 0px 0px 0px 250px;
+    top: 1910px;
     position: absolute;
     width: 100%
 }
 
 .content-sunlight-background {
-    margin: 2040px 0px 0px 0px;
-    padding: 0px 0px 0px 200px;
+    top: 2040px;
     position: absolute;
-    background: blue;
-    opacity: 0.2;
+    background: rgba(0, 0, 255, 0.2);
     width: 100%;
     height: 50px;
 }
 
 .content-canyon {
-    margin: 3545px 0px 0px 0px;
-    padding: 0px 0px 0px 250px;
+    top: 3545px;
     position: absolute;
     width: 100%
 }
 
 .content-canyon-background {
-    margin: 3670px 0px 0px 0px;
-    padding: 0px 0px 0px 200px;
+    top: 3670px;
     position: absolute;
-    background: blue;
-    opacity: 0.2;
+    background: rgba(0, 0, 255, 0.2);
     width: 100%;
     height: 50px;
 }
 
 .content-titanic {
-    margin: 7410px 0px 0px 0px;
-    padding: 0px 0px 0px 250px;
+    top: 7410px;
     position: absolute;
     width: 100%
 }
 
 .content-titanic-background {
-    margin: 7547px 0px 0px 0px;
-    padding: 0px 0px 0px 200px;
+    top: 7547px;
     position: absolute;
-    background: blue;
-    opacity: 0.2;
+    background: rgba(0, 0, 255, 0.2);
     width: 100%;
     height: 50px;
 }
 
 .content-everest {
-    margin: 17820px 0px 0px 0px;
-    padding: 0px 0px 0px 250px;
+    top: 17820px;
     position: absolute;
     width: 100%
 }
 
 .content-everest-background {
-    margin: 17950px 0px 0px 0px;
-    padding: 0px 0px 0px 200px;
+    top: 17950px;
     position: absolute;
-    background: blue;
-    opacity: 0.2;
+    background: rgba(0, 0, 255, 0.2);
     width: 100%;
     height: 50px;
 }
 
 .content-mariana {
-    margin: 22300px 0px 0px 0px;
-    padding: 0px 0px 0px 250px;
+    top: 22300px;
     position: absolute;
     width: 100%
 }
 
 .content-mariana-background {
-    margin: 22440px 0px 0px 0px;
-    padding: 0px 0px 0px 200px;
+    top: 22440px;
     position: absolute;
-    background: blue;
-    opacity: 0.2;
+    background: rgba(0, 0, 255, 0.2);
     width: 100%;
     height: 50px;
 }
@@ -388,6 +695,7 @@ body {
     color: white;
     padding-top: 75px;
     z-index: 100;
+    position: relative;
 }
 
 .meter p {
@@ -407,4 +715,8 @@ body {
     margin: 0px 0px 100px 0px;
     border: solid white 1px;
     width: 14px;
+}
+
+.boden {
+    transform: translateY(81px);
 }

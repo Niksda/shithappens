@@ -1,10 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <meta name="author" content="Nikolaos Papathanassopoulos">
+    <meta name="copyright" content="&copy; sophie und nikos 2017">
+
+    <meta name="description" content="Nochmal ein zweites Projekt von Nikos und Sophie" />
+    <meta name="keywords" content="U-Boot, Fisch, Wal, Hans, HTW, Sophie, Nikos" />
+
+    <meta name="robots" content="index, follow" />
+
+    <link rel="image_src" href="img/vorschau.svg">
+    <link rel="icon" href="img/submarine.ico">
+
+
     <title>submarine</title>
-    <link href="stylesheet.css" rel="stylesheet">
+    <link href="stylesheet.css" rel="stylesheet" media="screen">
+
     <script src="skrollr.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
 
@@ -12,7 +28,7 @@
 
 <body>
 
-    <header>
+    <header class="z1000">
         <div class="scroll">
             <p>SCROLL</p>
             <img class="pfeil" src="img/pfeil.svg" alt="pfeil">
@@ -22,8 +38,8 @@
         </div>
     </header>
 
-    <div class="submarine" data-start="transform: translateY(20vh)" data-end="transform: translateY(50vh)">
-      <svg viewBox="0 0 300 300">
+    <div class="submarine z10000" data-start="transform: translateY(20vh)" data-end="transform: translateY(50vh)">
+        <svg viewBox="0 0 300 300">
         <path d="M 45 60 h 10 l -10 30 h 10" stroke="#B5B5B5" fill="#B5B5B5" data-start="transform: rotateX(0deg)" data-end="transform: rotateX(1800deg)" transform-origin="center" />
 
         <path d="M120 75 L200 100 L200 50" fill="url(#lr)" data-start="transform: scale(1); transform-origin: left;" data-end="transform: scale(2); transform-origin: left;"/> <!-- Licht -->
@@ -47,39 +63,78 @@
       </svg>
     </div>
 
+    <div class="wrapper">
 
-    <div class="fish1">
-      <svg viewBox="0 0 1500 1500">
-          <ellipse class="fish_koerper1" cx="487.6" cy="339.7" rx="257.3" ry="152.2"/>
-          <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -150.0657 195.4017)" class="fish_koerper1" cx="160.8" cy="278.8" rx="76.1" ry="128.7"/>
-          <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -252.8446 237.9742)" class="fish_koerper1" cx="160.8" cy="424.2" rx="128.7" ry="76.1"/>
-          <circle class="fish_auge" cx="624.2" cy="314.4" r="35.6"/>
-          <circle cx="635.6" cy="318.5" r="23.5"/>
-      </svg>
-    </div>
+      <div class="fish z100">
 
-    <div class="fish2">
-      <svg viewBox="0 0 1500 1500">
-          <ellipse class="fish_koerper2" cx="487.6" cy="339.7" rx="257.3" ry="152.2"/>
-          <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -150.0657 195.4017)" class="fish_koerper2" cx="160.8" cy="278.8" rx="76.1" ry="128.7"/>
-          <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -252.8446 237.9742)" class="fish_koerper2" cx="160.8" cy="424.2" rx="128.7" ry="76.1"/>
-          <circle class="fish_auge" cx="624.2" cy="314.4" r="35.6"/>
-          <circle cx="635.6" cy="318.5" r="23.5"/>
-      </svg>
-    </div>
+          <div class="fish1">
+            <svg viewBox="0 0 1500 1500">
+                <ellipse class="fish_koerper1" cx="487.6" cy="339.7" rx="257.3" ry="152.2"/>
+                <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -150.0657 195.4017)" class="fish_koerper1" cx="160.8" cy="278.8" rx="76.1" ry="128.7"/>
+                <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -252.8446 237.9742)" class="fish_koerper1" cx="160.8" cy="424.2" rx="128.7" ry="76.1"/>
+                <circle class="fish_auge" cx="624.2" cy="314.4" r="35.6"/>
+                <circle cx="635.6" cy="318.5" r="23.5"/>
+            </svg>
+          </div>
 
-    <div class="fish3">
-      <svg viewBox="0 0 1500 1500">
-          <ellipse class="fish_koerper3" cx="487.6" cy="339.7" rx="257.3" ry="152.2"/>
-          <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -150.0657 195.4017)" class="fish_koerper3" cx="160.8" cy="278.8" rx="76.1" ry="128.7"/>
-          <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -252.8446 237.9742)" class="fish_koerper3" cx="160.8" cy="424.2" rx="128.7" ry="76.1"/>
-          <circle class="fish_auge" cx="624.2" cy="314.4" r="35.6"/>
-          <circle cx="635.6" cy="318.5" r="23.5"/>
-      </svg>
-    </div>
+          <div class="fish2">
+            <svg viewBox="0 0 1500 1500">
+                <ellipse class="fish_koerper2" cx="487.6" cy="339.7" rx="257.3" ry="152.2"/>
+                <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -150.0657 195.4017)" class="fish_koerper2" cx="160.8" cy="278.8" rx="76.1" ry="128.7"/>
+                <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -252.8446 237.9742)" class="fish_koerper2" cx="160.8" cy="424.2" rx="128.7" ry="76.1"/>
+                <circle class="fish_auge" cx="624.2" cy="314.4" r="35.6"/>
+                <circle cx="635.6" cy="318.5" r="23.5"/>
+            </svg>
+          </div>
+
+          <div class="fish3">
+            <svg viewBox="0 0 1500 1500">
+                <ellipse class="fish_koerper3" cx="487.6" cy="339.7" rx="257.3" ry="152.2"/>
+                <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -150.0657 195.4017)" class="fish_koerper3" cx="160.8" cy="278.8" rx="76.1" ry="128.7"/>
+                <ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -252.8446 237.9742)" class="fish_koerper3" cx="160.8" cy="424.2" rx="128.7" ry="76.1"/>
+                <circle class="fish_auge" cx="624.2" cy="314.4" r="35.6"/>
+                <circle cx="635.6" cy="318.5" r="23.5"/>
+            </svg>
+          </div>
+        </div>
+
+        <div class="wal">
+          <svg viewBox="0 0 800 800">
+            <path id="wal-flossen-2" class="wal-flossen" d="M657.7,158c0,0-39.7,58.7-6.8,81.7c22.5,15.8,43.9-19.8,43.9-19.8S676.4,170.6,657.7,158z"/>
+            <path class="wal-flossen" d="M401.8,334.1c0,0,117.5-33.7,105.3-17.4c-9.5,12.7,10.4,28.1,10.4,28.1L401.8,334.1z"/>
+            <path class="wal-koerper" d="M64.5,316.7c0,0,102.7,0,118.3,0s29.6-10.4,57.4-10.4s55.7,10.4,87.9,10.4s98.3,17.4,129.6,17.4
+        	S565.7,346.3,624,268c58.3-78.3,79.2-70.5,79.2-70.5s30,90.9-30.5,151.4S563.1,502.9,443.9,502C324.7,501.2,55,375,55,375
+        	s-20.9-20.5-20.9-36.3C34.1,322.8,55.8,316.7,64.5,316.7z"/>
+            <path class="wal-bauch" d="M55,375c0,0,130.5,33.9,167,27c0,0,47.1,34.6,102.8,52.9S486.3,498,486.3,498c-64.5,21.7-277.4,14.5-353.6-42.8
+        	C63.1,402.9,55,375,55,375z"/>
+            <path id="wal-flossen-1" class="wal-flossen" d="M300.4,445.7c0,0,71.1,55,86.6,62.4c15.5,7.4,46.4,21.3,61.7,17.4c15.4-3.9-0.4-14.8-12.4-22.5
+        	c-12-7.7-27.1-29.1-40.1-44.6c-13.1-15.5-34.9-25.8-45.3-24.9c-10.4,0.9-17,5.8-28.6,2.5S300.4,445.7,300.4,445.7z"/>
+            <circle class="wal-auge" cx="229.4" cy="372.9" r="8"/>
+            <circle cx="229.4" cy="372.9" r="4.1"/>
+            <path class="wal-mund" d="M49.9,320c0,0-6.4,15-0.6,20.7c5.8,5.7,42.2,16.7,65.4,18.7s84.4,13.5,84.4,13.5s-3.2-5.4-12.8-12.6
+        	c-9.6-7.3-92.5-20.1-111.8-28.2c-19.3-8.1-10-15.3-10-15.3S57.8,316.6,49.9,320z"/>
+            <path id="wal-flossen-2" class="wal-flossen" d="M769.2,211.9c0,0-54.3,1.7-72.4,9.8c-18.1,8-27,38.9-18.8,47C686.2,276.8,766.7,234.3,769.2,211.9z"/>
+          </svg>
+        </div>
+
+        <div class="pottwal">
+          <svg viewBox="0 0 800 800">
+            <path id="pottwal-flossen-2" class="pottwal-flossen" d="M762.2,453.1c8-3.4,4.2-42.5,4.2-42.5c-17.5,0-44.7,24.8-44.7,24.8s-5.4,19.4,10.4,26.7
+            	C747.9,469.5,762.2,453.1,762.2,453.1z"/>
+            <path class="pottwal-koerper" d="M119.5,506.5C114,507.9,79,492,76,469.5s-4-32-7-41s-5-25.5,20.5-38s123.5-37.3,291.5-33c0,0,57.5,0.5,77.5-4.5
+        	s37.5-3,54,9.5c16.5,12.5,46.5,15,46.5,15s7,2.1,20.1,9.5c13.9,7.8,23.4,3,60.4,16c0,0,17,14.5,54.5,20s70,22.5,70,29
+        	c0,6.5-22.5,12-65,14.5s-48,3-64,6.5s-29-1-36.5,3s-16.5,12-30,12s-32,0.5-40.5,7.5s-26,7-34.5,8s-27,14.5-53,15s-298.8,4.5-304,4.5
+        	S119,512,151,510.5s95.2-9,95.2-9l1-6c0,0-105.3,3.3-109.8,3.3S125,505.2,119.5,506.5z"/>
+            <path id="pottwal-flossen-1" class="pottwal-flossen" d="M332.4,496.4c0.5,0.8,19.8,32.2,29.7,34.7c9.9,2.5,18.3-4.6,15.7-14.7s-17.2-24.6-17.2-24.6L332.4,496.4z"/>
+            <circle class="pottwal-auge" cx="286" cy="476.6" r="7.8"/>
+            <circle cx="286" cy="476.6" r="4.6"/>
+            <path id="pottwal-flossen-2" class="pottwal-flossen" d="M720.8,453.1c0,0,0.4,5.7,8.1,29.5c7.7,23.7,32.8,36.2,31.1,29.7c-1.6-6.5,6.3-39.8,7.9-48
+        	c1.6-8.2-3.9-11.3-3.9-11.3H720.8z"/>
+          </svg>
+        </div>
 
     <div class="octopus">
-      <svg viewBox="0 0 1500 1500">
+        <svg viewBox="0 0 1500 1500">
         <path id="tentakel1" class="tentakel1">
             <animate  attributeName="d"
                       dur="3000ms"
@@ -250,7 +305,166 @@
     </div>
 
 
-    <div class="verlauf">
+    <div class="qualle">
+      <svg viewBox="0 0 2000 2000">
+        <g class="qualle-arme">
+          <path id="qualle-arm-1" class="qualle-arm">
+              <animate  attributeName="d"
+                        dur="4000ms"
+                        repeatCount="indefinite"
+                        values="                 M366.9,249.3c0,0-27,47.2-27,86.4s-23.6,91.6-23.6,122.5S334,535.9,334,580.9s-30.8,85.2-30.8,133.1;
+
+    M366.9,249.3c0,0-27,17.2-27,56.4s-23.6,61.6-23.6,92.5s17.7,47.8,17.7,92.8s-30.8,55.2-30.8,103.1;
+
+    M366.9,249.3c0,0-27,47.2-27,86.4s-23.6,91.6-23.6,122.5S334,535.9,334,580.9s-30.8,85.2-30.8,133.1"/>
+          </path>
+
+          <path id="qualle-arm-2" class="qualle-arm">
+              <animate  attributeName="d"
+                        dur="4000ms"
+                        repeatCount="indefinite"
+                        values="           M434.2,249.3c0,0,21,36.4,21,75.7c0,49.2,47.8,92.2,47.8,137c0,54.7-15,84-15,129s20,75.2,20,123.1;
+                       M434.2,249.3c0,0,21,6.4,21,45.7c0,49.2,47.8,62.2,47.8,107c0,54.7-15,54-15,99s20,45.2,20,93.1;
+                       M434.2,249.3c0,0,21,36.4,21,75.7c0,49.2,47.8,92.2,47.8,137c0,54.7-15,84-15,129s20,75.2,20,123.1"/>
+          </path>
+
+          <path id="qualle-arm-3" class="qualle-arm">
+              <animate  attributeName="d"
+                        dur="4000ms"
+                        repeatCount="indefinite"
+                        values="
+    M380.5,249.3c0,0-17,57.2-17,96.4S385,417.3,385,448.1s-27.5,77.8-27.5,122.8S326.7,686.1,326.7,734;
+
+    M380.5,249.3c0,0-17,27.2-17,66.4s21.5,41.6,21.5,72.5s-27.5,47.8-27.5,92.8s-30.8,85.2-30.8,133.1;
+
+    M380.5,249.3c0,0-17,57.2-17,96.4S385,417.3,385,448.1s-27.5,77.8-27.5,122.8S326.7,686.1,326.7,734;"/>
+          </path>
+
+          <path id="qualle-arm-4" class="qualle-arm">
+              <animate  attributeName="d"
+                        dur="4000ms"
+                        repeatCount="indefinite"
+                        values="
+    M404.1,249.3c0,0-15.1,57.2-15.1,96.4s20,91.6,20,122.5s-32,77.8-32,122.8s28.3,78.2,28.3,163.1;
+
+    M404.1,249.3c0,0-15.1,27.2-15.1,66.4s20,61.6,20,92.5s-32,47.8-32,92.8s28.3,48.2,28.3,133.1;
+
+    M404.1,249.3c0,0-15.1,57.2-15.1,96.4s20,91.6,20,122.5s-32,77.8-32,122.8s28.3,78.2,28.3,163.1;"/>
+          </path>
+
+          <path id="qualle-arm-5" class="qualle-arm">
+              <animate  attributeName="d"
+                        dur="4000ms"
+                        repeatCount="indefinite"
+                        values="
+    M406.4,249.3c0,0,13.9,57.2,13.9,96.4s14,81.6,14,112.5S409,535.9,409,580.9s19.3,115.2,19.3,163.1;
+
+    M406.4,249.3c0,0,13.9,27.2,13.9,66.4s14,51.6,14,82.5S409,445.9,409,490.9s19.3,85.2,19.3,133.1;
+
+    M406.4,249.3c0,0,13.9,57.2,13.9,96.4s14,81.6,14,112.5S409,535.9,409,580.9s19.3,115.2,19.3,163.1;"/>
+          </path>
+
+          <path id="qualle-arm-6" class="qualle-arm">
+              <animate  attributeName="d"
+                        dur="4000ms"
+                        repeatCount="indefinite"
+                        values="
+                       M425.3,249.3c0,0,11.9,57.2,11.9,96.4s23,71.6,23,102.5S450,525.9,450,570.9s38,115.2,38,163.1;
+                   M425.3,249.3c0,0,11.9,27.2,11.9,66.4s23,41.6,23,72.5S450,435.9,450,480.9s38,85.2,38,133.1;
+                       M425.3,249.3c0,0,11.9,57.2,11.9,96.4s23,71.6,23,102.5S450,525.9,450,570.9s38,115.2,38,163.1;"/>
+          </path>
+        </g>
+
+        <g class="qualle-kopf">
+          <path d="M516.8,218.5c0,34.9-52.3,40.9-116.8,40.9s-116.8-6-116.8-40.9S329.3,116.6,400,116.6S516.8,183.6,516.8,218.5
+    z"/>
+        </g>
+        <g class="qualle-kopf">
+    <ellipse class="st0" cx="400" cy="257.2" rx="55.6" ry="9.9"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="laternenfisch">
+      <svg viewBox="0 0 800 800">
+        <polygon class="laternenfisch-flosse" points="511.6,442.4 499.3,415.1 598.5,370.6 592.5,406.2 "/>
+        <path class="laternenfisch-flosse" d="M711.9,358c-48.4,13-113.5,4.2-121.6-26c-8.1-30.2,43.9-70.4,92.3-83.3c48.4-13,61.4,9.8,69.5,40
+    	S760.3,345,711.9,358z"/>
+        <ellipse class="laternenfisch-zunge" cx="317.6" cy="550.8" rx="103" ry="44.9"/>
+        <polygon class="laternenfisch-zaehne" points="180.3,584 152.7,528.4 169.7,552.4 164,524.4 188.7,572 188.7,548.4 196.3,561.7 183,507.2 209.7,573
+    	209.7,559.4 216.7,572.4 210.7,509.7 233.3,582.4 225.3,520.7 247.7,578 246.3,545.6 257.7,577 259.3,560 267,579.4 259,537
+    	284,588.4 275.7,528 294,578.7 294,552.7 302,577.7 300.3,540 321.3,592.7 315.3,548.4 327.7,579 321,545.7 333.3,574.7
+    	324.7,540.4 339,569 342,544.7 351.3,571.4 344.3,602 185,605.7 "/>
+        <path class="laternenfisch-zaehne" d="M211,422.4L197.7,465l17-41L204,467l21.3-39.7l-13.8,41.3l21.5-34l-10,39.7l22.3-31.7L231,474.4l26.4-21.3
+    	l-15.7,31.3l28.7-31l-18.3,42l24.3-36.5c0,0-12.7,40.5-12,39.5c0.7-1,21.2-27.7,21.2-27.7l-14.6,26l35-36.3l-22.7,40.3l32-32.7
+    	l-25,39.5l29.3-28.8l-24.3,44l31.3-40l-15.7,29l22-22.7l-19,37l22.7-26.7L324,526l22-23.3l-12.3,22l15-13.3l7.7-27L255.7,427
+    	L211,422.4z"/>
+        <line class="laternenfisch-laterne" x1="135.7" y1="201" x2="231.9" y2="386"/>
+        <circle class="laternenfisch-lampe" cx="135.8" cy="201.4" r="19.8"/>
+        <path class="laternenfisch-koerper" d="M172.7,582c0,0,0,31.5,9,40.5s42,2,78.5,12.5s76.5,25.5,118,12s80.5-38.5,101-89s28.5-62.5,34.5-99.5
+    	c6-37,44.8-79.4,98.9-104.3L600,299.5c0,0-73.3-25.5-122.8-50s-97.5-32-135-14s-62,35.5-92,81.5c-27.7,42.5-35.5,57-45.5,107
+    	c0,0,57.5,29,95,56.5s75,73.5,75,73.5s-49.5,17.5-97.5,22C229.4,580.5,172.7,582,172.7,582z"/>
+        <circle class="laternenfisch-auge" cx="293.4" cy="364.3" r="18.8"/>
+        <circle cx="293.4" cy="364.3" r="9.8"/>
+        <path class="laternenfisch-flosse" d="M527.4,271.8c-12.5,26.8-61.2,63.6-93,48.7c-31.9-14.9-34.9-75.8-22.4-102.6s48.5-36.4,80.3-21.5
+    	S539.9,245,527.4,271.8z"/>
+        <ellipse transform="matrix(0.4231 -0.9061 0.9061 0.4231 -68.7171 580.2301)" class="laternenfisch-koerper" cx="421.3" cy="344.1" rx="46" ry="46"/>
+      </svg>
+    </div>
+
+
+<div class="hans z1000">
+  <svg class="hanskrebs" xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="0 0 800 800" xml:space="preserve">
+  	<style type="text/css">
+  		.st0 {
+  			fill: #FF1400;
+  		}
+  		.st1 {
+  			fill: #CBB19B;
+  		}
+  		.st2 {
+  			fill: #E2C6AA;
+  		}
+  		.st3 {
+  			fill: #585646;
+  		}
+  		.st4 {
+  			fill: #FFFFFF;
+  		}
+  		.st5 {
+  			fill: #2F2C2C;
+  		}
+
+  	</style>
+  	<polygon class="st0" points="154.7 577.1 102.1 614 136.8 789.3 154.7 640.3 296.6 624.7 "/>
+  	<polygon class="st0" points="199.4 592.1 182.1 693.9 328.8 800 242.9 677.3 296.6 624.7 "/>
+  	<polygon class="st0" points="296.6 608.1 275.1 668.9 382.5 789.3 328.8 672.5 387.3 627.2 "/>
+  	<polygon class="st0" points="647.7 577.1 700.3 614 665.6 789.3 647.7 640.3 505.9 624.7 "/>
+  	<polygon class="st0" points="603 592.1 620.4 693.9 473.7 800 559.6 677.3 505.9 624.7 "/>
+  	<polygon class="st0" points="505.9 608.1 527.4 668.9 420 789.3 473.7 672.5 415.2 627.2 "/>
+  	<ellipse class="st0" cx="408" cy="547.8" rx="276" ry="100.7"/>
+  	<path class="st0" d="M157.1 528.1l-85.9-52.6c0 0-118.1-72.6-50.1-221.6s234.3-57.2 234.3-57.2 -97.5 47-123.4 84.6 -15.6 76.4-15.6 76.4 20.9-11.1 51.9-47.8 39.9-76.4 39.9-76.4 57.2 91.8 19.1 155.1 -59.6 71.6-59.6 71.6l56 44.2"/>
+  	<path class="st0" d="M660.3 528.1l68-56.4c0 0 123.4-77.8 46.5-223.6s-229-54.6-229-54.6 69.8 28.1 116.8 90.7c47 62.6 61.4 119.3 61.4 119.3s-49.9-31.8-78.2-66.2c-28.3-34.3-56.4-98-56.4-98s-58.1 79.1-29.5 142.2 64 76 64 76l-21.1 34"/>
+  	<path class="st1" d="M479.5 408.9c0 0 6.3-21.7 15.1-17.4 8.7 4.4 15.5 14.6 11.2 38.4 -4.4 23.8-0.1 46.6-12.4 49.1 -12.3 2.4-21.6-16.5-23-21.9C468.9 451.8 479.5 408.9 479.5 408.9z"/>
+  	<path class="st1" d="M311.9 479.2c0 0-4.9 13.4-17.5 8.5 -12.6-4.9-18-13.1-18.9-23.3s-6.8-30.1-7.8-32.6c-1-2.4-0.5-28.4 18-23 18.5 5.5 26.2 30.7 26.2 30.7V479.2z"/>
+  	<path
+  		class="st2"
+  		d="M295.4 423.6c0 0-0.5 62.2 20.4 92.3 20.9 30.1 49.1 60.2 79.7 60.2s81.1-34 85.5-94.7c4.4-60.7 3.4-124.9 2.4-126.3 -1-1.5-1.9-62.7-22.3-78.7 -20.4-16-67.5-32.6-94.7-24.8 -27.2 7.8-71.9 15.5-77.3 59.3C283.7 354.6 295.4 423.6 295.4 423.6z"/>
+  		<path
+  		class="st3"
+  		d="M295.4 423.6c0 0 7.3-67 4.9-78.7s-2.2-45.7-2.2-45.7 11.9 16 13.8 19.9c1.9 3.9 14.6-15.1 8.3-19.9s38.4 0.5 47.1 10.2c8.7 9.7 25.8 4.9 33 3.9 7.3-1 14.6-14.6 28.7-10.7s21.9 8.5 22.3-5.2c0.5-13.7 6.3-13 10.2 0s11.2 49.9 14.6 63c3.4 13.1 1.6 29.3 12.5 31.9 10.9 2.6 14.2-14.9 14.2-25.1s1.5-54.9-8.3-66.1c-9.7-11.2-24.8-37.4-32.6-43.7 -7.8-6.3-29.6-25.8-40.8-29.2s-41.8-8.3-47.6-8.3c-5.8 0-32.6 10.2-41.3 14.1s-26.2 27.2-32.6 33.5 -25.8 33.5-29.2 54.2c-3.4 20.6-1.5 62.7 3.4 69.1C278.9 397.3 295.4 423.6 295.4 423.6z"/>
+  		<path class="st4" d="M339.4 419.3c-12-1.1-20.7-11.4-19.8-23.4 0.9-12.1 11-20.9 23.1-20.1 12.8 0.8 22 11.7 20.5 24.3C361.9 411.9 351.4 420.4 339.4 419.3z"/>
+  		<path class="st5" d="M347.2 407.7c-5.6-0.5-9.7-5.4-9.3-11 0.4-5.7 5.2-9.8 10.9-9.4 6 0.4 10.3 5.5 9.6 11.4C357.8 404.3 352.9 408.3 347.2 407.7z"/>
+  		<path class="st5" d="M393.1 521.1c-17.8-1.7-30.7-17-29.4-34.9 1.4-17.9 16.4-31 34.4-29.9 19.1 1.2 32.7 17.3 30.5 36.1C426.6 510.1 410.9 522.7 393.1 521.1z"/>
+  		<path class="st4" d="M436 413.2c11.9-2 19.7-13 17.9-24.9 -1.8-12-12.6-19.9-24.6-18.2 -12.7 1.8-21 13.3-18.6 25.8C412.9 407.6 424.1 415.2 436 413.2z"/>
+  		<path class="st5" d="M427.3 402.3c5.6-1 9.3-6.1 8.4-11.7 -0.9-5.6-5.9-9.4-11.6-8.6 -6 0.8-9.9 6.3-8.7 12.1C416.5 399.7 421.7 403.3 427.3 402.3z"/>
+  	</svg>
+
+
+</div>
+
+
+    <div class="verlauf z1">
 
         <div class="content">
             <div class="content-wale-background">
@@ -266,18 +480,31 @@
             </div>
 
             <div class="content-canyon-background">
+
+              <div class="canyon z1000">
+                <img src="img/grand_canyon.svg" />
+              </div>
             </div>
             <div class="content-canyon">
                 <p class="content-text">Deepest Point of <br>Grand Canyon</p>
             </div>
 
             <div class="content-titanic-background">
+
+              <div class="titanic z1000">
+                <img src="img/titanic.svg" />
+              </div>
+
             </div>
             <div class="content-titanic">
                 <p class="content-text">The Titanic on <br>the bottom</p>
             </div>
 
             <div class="content-everest-background">
+              <div class="everest z1000">
+                <img src="img/mount_everest.svg" />
+              </div>
+
             </div>
             <div class="content-everest">
                 <p class="content-text">Height of <br>Mount Everest</p>
@@ -293,7 +520,7 @@
     </div>
 
 
-    <div class="meter">
+    <div class="meter z10">
         <hr>
         <hr id="meter_100">
         <hr>
@@ -544,8 +771,7 @@
     <div class="boden">
         <img src="img/boden.svg" alt="boden">
     </div>
-
-
+  </div>
     <script>
         var s = skrollr.init({
             render: function(data) {
